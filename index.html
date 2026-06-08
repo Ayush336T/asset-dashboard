@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Collection Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f1117;
+            color: #e4e4e7;
+            padding: 24px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .header .refresh-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .header .refresh-btn:hover { background: #1d4ed8; }
+        .header .refresh-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .stat-card {
+            background: #1c1c24;
+            border: 1px solid #2a2a35;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .stat-card .label {
+            font-size: 12px;
+            color: #a1a1aa;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stat-card .value {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 4px;
+        }
+        .stat-card .value.triage { color: #f59e0b; }
+        .stat-card .value.wip { color: #3b82f6; }
+        .stat-card .value.done { color: #10b981; }
+        .stat-card .value.total { color: #e4e4e7; }
+        .filters {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background: #1c1c24;
+            border: 1px solid #2a2a35;
+            color: #a1a1aa;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .filter-btn.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: white;
+        }
+        .filter-btn:hover { border-color: #3b82f6; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1c1c24;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        thead th {
+            text-align: left;
+            padding: 12px 16px;
+            background: #16161d;
+            font-size: 12px;
+            color: #a1a1aa;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #2a2a35;
+        }
+        tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #1f1f2a;
+            font-size: 14px;
+        }
+        tbody tr:hover { background: #22222d; }
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .badge.triage { background: #78350f; color: #fbbf24; }
+        .badge.wip { background: #1e3a5f; color: #60a5fa; }
+        .badge.done { background: #064e3b; color: #34d399; }
+        .badge.other { background: #2a2a35; color: #a1a1aa; }
+        .issue-id {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .issue-id:hover { text-decoration: underline; }
+        .employee-name { font-weight: 500; }
+        .date { color: #a1a1aa; }
+        .days-pending {
+            font-weight: 600;
+        }
+        .days-pending.urgent { color: #ef4444; }
+        .days-pending.warning { color: #f59e0b; }
+        .days-pending.ok { color: #10b981; }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #a1a1aa;
+        }
+        .last-updated {
+            font-size: 12px;
+            color: #71717a;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Asset Collection Dashboard</h1>
+            <span class="last-updated" id="lastUpdated"></span>
+        </div>
+        <button class="refresh-btn" id="refreshBtn" onclick="fetchData()">Refresh</button>
+    </div>
+
+    <div class="stats" id="stats">
+        <div class="stat-card"><div class="label">Total</div><div class="value total" id="statTotal">-</div></div>
+        <div class="stat-card"><div class="label">Triage</div><div class="value triage" id="statTriage">-</div></div>
+        <div class="stat-card"><div class="label">In Progress</div><div class="value wip" id="statWip">-</div></div>
+        <div class="stat-card"><div class="label">Completed</div><div class="value done" id="statDone">-</div></div>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">All</button>
+        <button class="filter-btn" data-filter="triage" onclick="setFilter('triage')">Triage</button>
+        <button class="filter-btn" data-filter="in_progress" onclick="setFilter('in_progress')">In Progress</button>
+        <button class="filter-btn" data-filter="done" onclick="setFilter('done')">Completed</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Employee</th>
+                <th>Stage</th>
+                <th>Last Working Day</th>
+                <th>Created</th>
+                <th>Days Pending</th>
+                <th>Assignee</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr><td colspan="7" class="loading">Loading...</td></tr>
+        </tbody>
+    </table>
+
+    <script>
+        function getToken() {
+            let token = localStorage.getItem('devrev_pat');
+            if (!token || token.length < 50) {
+                token = prompt('Enter your DevRev PAT token:');
+                if (token && token.trim().length > 50) {
+                    token = token.trim();
+                    localStorage.setItem('devrev_pat', token);
+                } else {
+                    return null;
+                }
+            }
+            return token;
+        }
+        const API_TOKEN = getToken();
+
+        let allIssues = [];
+        let currentFilter = 'all';
+
+        async function fetchData() {
+            const btn = document.getElementById('refreshBtn');
+            btn.disabled = true;
+            btn.textContent = 'Loading...';
+
+            try {
+                let issues = [];
+                let cursor = null;
+
+                do {
+                    const body = { type: ['issue'], limit: 100 };
+                    if (cursor) body.cursor = cursor;
+
+                    const resp = await fetch('https://api.devrev.ai/works.list', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': API_TOKEN,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(body)
+                    });
+                    const data = await resp.json();
+
+                    const assetIssues = (data.works || []).filter(w =>
+                        w.title && w.title.includes('Asset Collection')
+                    );
+                    issues.push(...assetIssues);
+                    cursor = data.next_cursor;
+                } while (cursor && issues.length < 200);
+
+                allIssues = issues.map(w => {
+                    let lwd = w.target_close_date || '';
+                    if (!lwd && w.body) {
+                        const match = w.body.match(/Last Working Day[:\s]*<\/?\w*>?\s*([^<\n]+)/i);
+                        if (match) lwd = match[1].trim();
+                    }
+                    return {
+                        id: w.display_id,
+                        title: w.title,
+                        employee: w.title.replace('Employee Name: ', '').replace(' - Asset Collection', ''),
+                        stage: w.stage?.name || 'unknown',
+                        stageState: w.stage?.state?.name || '',
+                        created: w.created_date,
+                        lwd: lwd,
+                        assignee: (w.owned_by || []).map(o => o.full_name || o.display_name).join(', '),
+                        daysPending: Math.floor((Date.now() - new Date(w.created_date)) / 86400000)
+                    };
+                });
+
+                allIssues.sort((a, b) => {
+                    const aLwd = a.lwd ? new Date(a.lwd).getTime() : Infinity;
+                    const bLwd = b.lwd ? new Date(b.lwd).getTime() : Infinity;
+                    return aLwd - bLwd;
+                });
+                updateStats();
+                renderTable();
+                document.getElementById('lastUpdated').textContent =
+                    `Last updated: ${new Date().toLocaleString()}`;
+            } catch (err) {
+                document.getElementById('tableBody').innerHTML =
+                    `<tr><td colspan="7" class="loading">Error: ${err.message}</td></tr>`;
+            }
+
+            btn.disabled = false;
+            btn.textContent = 'Refresh';
+        }
+
+        function updateStats() {
+            const triage = allIssues.filter(i => i.stage === 'triage').length;
+            const wip = allIssues.filter(i => ['in_development', 'in_progress', 'work_in_progress'].includes(i.stage)).length;
+            const done = allIssues.filter(i => i.stageState === 'closed' || i.stage === 'done' || i.stage === 'resolved').length;
+
+            document.getElementById('statTotal').textContent = allIssues.length;
+            document.getElementById('statTriage').textContent = triage;
+            document.getElementById('statWip').textContent = wip;
+            document.getElementById('statDone').textContent = done;
+        }
+
+        function setFilter(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector(`[data-filter="${filter}"]`).classList.add('active');
+            renderTable();
+        }
+
+        function renderTable() {
+            let filtered = allIssues;
+            if (currentFilter === 'triage') filtered = allIssues.filter(i => i.stage === 'triage');
+            else if (currentFilter === 'in_progress') filtered = allIssues.filter(i => ['in_development', 'in_progress', 'work_in_progress'].includes(i.stage));
+            else if (currentFilter === 'done') filtered = allIssues.filter(i => i.stageState === 'closed' || i.stage === 'done' || i.stage === 'resolved');
+
+            if (!filtered.length) {
+                document.getElementById('tableBody').innerHTML =
+                    '<tr><td colspan="7" class="loading">No issues found</td></tr>';
+                return;
+            }
+
+            document.getElementById('tableBody').innerHTML = filtered.map(issue => {
+                const badgeClass = issue.stage === 'triage' ? 'triage' :
+                    ['in_development', 'in_progress', 'work_in_progress'].includes(issue.stage) ? 'wip' :
+                    (issue.stageState === 'closed' || issue.stage === 'done') ? 'done' : 'other';
+
+                const daysClass = issue.daysPending > 14 ? 'urgent' :
+                    issue.daysPending > 7 ? 'warning' : 'ok';
+
+                const lwdDisplay = issue.lwd ? new Date(issue.lwd).toLocaleDateString() : '-';
+                const lwdDate = issue.lwd ? new Date(issue.lwd) : null;
+                const lwdClass = lwdDate && lwdDate < new Date() ? 'urgent' :
+                    lwdDate && (lwdDate - new Date()) < 7 * 86400000 ? 'warning' : '';
+
+                return `<tr>
+                    <td><a class="issue-id" href="https://app.devrev.ai/peopleops/works/${issue.id}" target="_blank">${issue.id}</a></td>
+                    <td class="employee-name">${issue.employee}</td>
+                    <td><span class="badge ${badgeClass}">${issue.stage}</span></td>
+                    <td class="date ${lwdClass}">${lwdDisplay}</td>
+                    <td class="date">${new Date(issue.created).toLocaleDateString()}</td>
+                    <td><span class="days-pending ${daysClass}">${issue.daysPending}d</span></td>
+                    <td>${issue.assignee}</td>
+                </tr>`;
+            }).join('');
+        }
+
+        fetchData();
+    </script>
+</body>
+</html>
