@@ -219,6 +219,7 @@
         let assigneeFilter = 'all';
         let currentUserId = '';
         let currentUserName = '';
+        let currentUserEmail = '';
 
         async function detectUser() {
             if (!API_TOKEN) return;
@@ -228,9 +229,12 @@
                     headers: { 'Authorization': API_TOKEN }
                 });
                 const data = await resp.json();
-                currentUserId = data.dev_user?.id || '';
-                currentUserName = data.dev_user?.full_name || data.dev_user?.display_name || '';
-            } catch (e) {}
+                const u = data.dev_user || {};
+                currentUserId = u.id || '';
+                currentUserName = u.full_name || u.display_name || '';
+                currentUserEmail = u.email || '';
+                console.log('Detected user:', { id: currentUserId, name: currentUserName, email: currentUserEmail });
+            } catch (e) { console.error('detectUser failed:', e); }
         }
 
         async function fetchData() {
@@ -270,6 +274,7 @@
                         const match = w.body.match(/Last Working Day[:\s]*<\/?\w*>?\s*([^<\n]+)/i);
                         if (match) lwd = match[1].trim();
                     }
+                    const owners = w.owned_by || [];
                     return {
                         id: w.display_id,
                         title: w.title,
@@ -278,11 +283,16 @@
                         stageState: w.stage?.state?.name || '',
                         created: w.created_date,
                         lwd: lwd,
-                        assigneeIds: (w.owned_by || []).map(o => o.id),
-                        assignee: (w.owned_by || []).map(o => o.full_name || o.display_name).join(', '),
+                        owners: owners,
+                        assignee: owners.map(o => o.full_name || o.display_name).join(', '),
                         daysPending: Math.floor((Date.now() - new Date(w.created_date)) / 86400000)
                     };
                 });
+
+                if (issues.length > 0) {
+                    console.log('Sample issue owners:', issues[0].owned_by);
+                    console.log('Current user ID:', currentUserId);
+                }
 
                 allIssues.sort((a, b) => {
                     const aLwd = a.lwd ? new Date(a.lwd).getTime() : Infinity;
@@ -328,10 +338,16 @@
         }
 
         function getFilteredByAssignee(list) {
-            if (assigneeFilter === 'mine' && currentUserId) {
-                return list.filter(i => i.assigneeIds.includes(currentUserId));
-            }
-            return list;
+            if (assigneeFilter !== 'mine') return list;
+            return list.filter(i => {
+                return i.owners.some(o => {
+                    if (currentUserId && o.id === currentUserId) return true;
+                    if (currentUserId && o.id && o.id.includes(currentUserId.split(':').pop())) return true;
+                    if (currentUserEmail && o.email === currentUserEmail) return true;
+                    if (currentUserName && (o.full_name === currentUserName || o.display_name === currentUserName)) return true;
+                    return false;
+                });
+            });
         }
 
         function renderTable() {
