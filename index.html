@@ -146,7 +146,10 @@
             <h1>Asset Collection Dashboard</h1>
             <span class="last-updated" id="lastUpdated"></span>
         </div>
-        <button class="refresh-btn" id="refreshBtn" onclick="fetchData()">Refresh</button>
+        <div>
+            <button class="refresh-btn" id="refreshBtn" onclick="fetchData()">Refresh</button>
+            <button class="refresh-btn" style="background:#71717a;margin-left:8px" onclick="resetToken()">Reset Token</button>
+        </div>
     </div>
 
     <div class="stats" id="stats">
@@ -184,15 +187,23 @@
         function getToken() {
             let token = localStorage.getItem('devrev_pat');
             if (!token || token.length < 50) {
-                token = prompt('Enter your DevRev PAT token:');
-                if (token && token.trim().length > 50) {
+                token = prompt('Paste your DevRev PAT token (the full eyJ... string):');
+                if (token) {
                     token = token.trim();
-                    localStorage.setItem('devrev_pat', token);
-                } else {
-                    return null;
+                    if (token.startsWith('eyJ') && token.length > 100) {
+                        localStorage.setItem('devrev_pat', token);
+                        return token;
+                    }
                 }
+                document.getElementById('tableBody').innerHTML =
+                    '<tr><td colspan="7" class="loading">No valid token provided. Click "Reset Token" to try again.</td></tr>';
+                return null;
             }
             return token;
+        }
+        function resetToken() {
+            localStorage.removeItem('devrev_pat');
+            location.reload();
         }
         const API_TOKEN = getToken();
 
@@ -200,6 +211,7 @@
         let currentFilter = 'all';
 
         async function fetchData() {
+            if (!API_TOKEN) return;
             const btn = document.getElementById('refreshBtn');
             btn.disabled = true;
             btn.textContent = 'Loading...';
