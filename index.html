@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asset Collection Dashboard</title>
+    <title>Offboarding Dashboard</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -143,7 +143,7 @@
 <body>
     <div class="header">
         <div>
-            <h1>Asset Collection Dashboard</h1>
+            <h1>Offboarding Dashboard</h1>
             <span class="last-updated" id="lastUpdated"></span>
         </div>
         <div>
@@ -178,6 +178,7 @@
             <tr>
                 <th>ID</th>
                 <th>Employee</th>
+                <th>Task</th>
                 <th>Stage</th>
                 <th>Last Working Day</th>
                 <th>Created</th>
@@ -186,7 +187,7 @@
             </tr>
         </thead>
         <tbody id="tableBody">
-            <tr><td colspan="7" class="loading">Loading...</td></tr>
+            <tr><td colspan="8" class="loading">Loading...</td></tr>
         </tbody>
     </table>
 
@@ -203,7 +204,7 @@
                     }
                 }
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="7" class="loading">No valid token provided. Click "Reset Token" to try again.</td></tr>';
+                    '<tr><td colspan="8" class="loading">No valid token provided. Click "Reset Token" to try again.</td></tr>';
                 return null;
             }
             return token;
@@ -256,11 +257,11 @@
                     const data = await resp.json();
 
                     const assetIssues = (data.works || []).filter(w =>
-                        w.title && w.title.includes('Asset Collection')
+                        w.title && w.title.startsWith('Employee Name:')
                     );
                     issues.push(...assetIssues);
                     cursor = data.next_cursor;
-                } while (cursor && issues.length < 200);
+                } while (cursor && issues.length < 500);
 
                 allIssues = issues.map(w => {
                     let lwd = w.target_close_date || '';
@@ -269,10 +270,14 @@
                         if (match) lwd = match[1].trim();
                     }
                     const owners = w.owned_by || [];
+                    const titleParts = w.title.replace('Employee Name: ', '').split(' - ');
+                    const employee = titleParts[0].trim();
+                    const task = titleParts.slice(1).join(' - ').trim() || 'General';
                     return {
                         id: w.display_id,
                         title: w.title,
-                        employee: w.title.replace('Employee Name: ', '').replace(' - Asset Collection', ''),
+                        employee: employee,
+                        task: task,
                         stage: w.stage?.name || 'unknown',
                         stageState: w.stage?.state?.name || '',
                         created: w.created_date,
@@ -294,7 +299,7 @@
                     `Last updated: ${new Date().toLocaleString()}`;
             } catch (err) {
                 document.getElementById('tableBody').innerHTML =
-                    `<tr><td colspan="7" class="loading">Error: ${err.message}</td></tr>`;
+                    `<tr><td colspan="8" class="loading">Error: ${err.message}</td></tr>`;
             }
 
             btn.disabled = false;
@@ -347,7 +352,7 @@
 
             if (!filtered.length) {
                 document.getElementById('tableBody').innerHTML =
-                    '<tr><td colspan="7" class="loading">No issues found</td></tr>';
+                    '<tr><td colspan="8" class="loading">No issues found</td></tr>';
                 return;
             }
 
@@ -367,6 +372,7 @@
                 return `<tr>
                     <td><a class="issue-id" href="https://app.devrev.ai/peopleops/works/${issue.id}" target="_blank">${issue.id}</a></td>
                     <td class="employee-name">${issue.employee}</td>
+                    <td>${issue.task}</td>
                     <td><span class="badge ${badgeClass}">${issue.stage}</span></td>
                     <td class="date ${lwdClass}">${lwdDisplay}</td>
                     <td class="date">${new Date(issue.created).toLocaleDateString()}</td>
