@@ -217,6 +217,7 @@
         let allIssues = [];
         let currentFilter = 'all';
         let assigneeFilter = 'all';
+        let currentUserId = '';
         let currentUserName = '';
 
         async function detectUser() {
@@ -227,6 +228,7 @@
                     headers: { 'Authorization': API_TOKEN }
                 });
                 const data = await resp.json();
+                currentUserId = data.dev_user?.id || '';
                 currentUserName = data.dev_user?.full_name || data.dev_user?.display_name || '';
             } catch (e) {}
         }
@@ -276,6 +278,7 @@
                         stageState: w.stage?.state?.name || '',
                         created: w.created_date,
                         lwd: lwd,
+                        assigneeIds: (w.owned_by || []).map(o => o.id),
                         assignee: (w.owned_by || []).map(o => o.full_name || o.display_name).join(', '),
                         daysPending: Math.floor((Date.now() - new Date(w.created_date)) / 86400000)
                     };
@@ -325,8 +328,8 @@
         }
 
         function getFilteredByAssignee(list) {
-            if (assigneeFilter === 'mine' && currentUserName) {
-                return list.filter(i => i.assignee.toLowerCase().includes(currentUserName.toLowerCase()));
+            if (assigneeFilter === 'mine' && currentUserId) {
+                return list.filter(i => i.assigneeIds.includes(currentUserId));
             }
             return list;
         }
