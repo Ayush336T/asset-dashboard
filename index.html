@@ -164,6 +164,13 @@
         <button class="filter-btn" data-filter="triage" onclick="setFilter('triage')">Triage</button>
         <button class="filter-btn" data-filter="in_progress" onclick="setFilter('in_progress')">In Progress</button>
         <button class="filter-btn" data-filter="done" onclick="setFilter('done')">Completed</button>
+        <span style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <label style="font-size:13px;color:#a1a1aa">Assignee:</label>
+            <select id="assigneeFilter" onchange="setAssigneeFilter(this.value)" style="background:#1c1c24;border:1px solid #2a2a35;color:#e4e4e7;padding:6px 10px;border-radius:6px;font-size:13px">
+                <option value="all">Everyone</option>
+                <option value="mine">My tickets</option>
+            </select>
+        </span>
     </div>
 
     <table>
@@ -209,6 +216,20 @@
 
         let allIssues = [];
         let currentFilter = 'all';
+        let assigneeFilter = 'all';
+        let currentUserName = '';
+
+        async function detectUser() {
+            if (!API_TOKEN) return;
+            try {
+                const resp = await fetch('https://api.devrev.ai/dev-users.self', {
+                    method: 'GET',
+                    headers: { 'Authorization': API_TOKEN }
+                });
+                const data = await resp.json();
+                currentUserName = data.dev_user?.full_name || data.dev_user?.display_name || '';
+            } catch (e) {}
+        }
 
         async function fetchData() {
             if (!API_TOKEN) return;
@@ -279,11 +300,12 @@
         }
 
         function updateStats() {
-            const triage = allIssues.filter(i => i.stage === 'triage').length;
-            const wip = allIssues.filter(i => ['in_development', 'in_progress', 'work_in_progress'].includes(i.stage)).length;
-            const done = allIssues.filter(i => i.stageState === 'closed' || i.stage === 'done' || i.stage === 'resolved').length;
+            const base = getFilteredByAssignee(allIssues);
+            const triage = base.filter(i => i.stage === 'triage').length;
+            const wip = base.filter(i => ['in_development', 'in_progress', 'work_in_progress'].includes(i.stage)).length;
+            const done = base.filter(i => i.stageState === 'closed' || i.stage === 'done' || i.stage === 'resolved').length;
 
-            document.getElementById('statTotal').textContent = allIssues.length;
+            document.getElementById('statTotal').textContent = base.length;
             document.getElementById('statTriage').textContent = triage;
             document.getElementById('statWip').textContent = wip;
             document.getElementById('statDone').textContent = done;
@@ -296,11 +318,24 @@
             renderTable();
         }
 
+        function setAssigneeFilter(value) {
+            assigneeFilter = value;
+            updateStats();
+            renderTable();
+        }
+
+        function getFilteredByAssignee(list) {
+            if (assigneeFilter === 'mine' && currentUserName) {
+                return list.filter(i => i.assignee.toLowerCase().includes(currentUserName.toLowerCase()));
+            }
+            return list;
+        }
+
         function renderTable() {
-            let filtered = allIssues;
-            if (currentFilter === 'triage') filtered = allIssues.filter(i => i.stage === 'triage');
-            else if (currentFilter === 'in_progress') filtered = allIssues.filter(i => ['in_development', 'in_progress', 'work_in_progress'].includes(i.stage));
-            else if (currentFilter === 'done') filtered = allIssues.filter(i => i.stageState === 'closed' || i.stage === 'done' || i.stage === 'resolved');
+            let filtered = getFilteredByAssignee(allIssues);
+            if (currentFilter === 'triage') filtered = filtered.filter(i => i.stage === 'triage');
+            else if (currentFilter === 'in_progress') filtered = filtered.filter(i => ['in_development', 'in_progress', 'work_in_progress'].includes(i.stage));
+            else if (currentFilter === 'done') filtered = filtered.filter(i => i.stageState === 'closed' || i.stage === 'done' || i.stage === 'resolved');
 
             if (!filtered.length) {
                 document.getElementById('tableBody').innerHTML =
@@ -333,7 +368,7 @@
             }).join('');
         }
 
-        fetchData();
+        detectUser().then(() => fetchData());
     </script>
 </body>
 </html>
