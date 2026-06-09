@@ -217,9 +217,7 @@
         let allIssues = [];
         let currentFilter = 'all';
         let assigneeFilter = 'all';
-        let currentUserId = '';
-        let currentUserName = '';
-        let currentUserEmail = '';
+        let currentUser = {};
 
         async function detectUser() {
             if (!API_TOKEN) return;
@@ -229,12 +227,8 @@
                     headers: { 'Authorization': API_TOKEN }
                 });
                 const data = await resp.json();
-                const u = data.dev_user || {};
-                currentUserId = u.id || '';
-                currentUserName = u.full_name || u.display_name || '';
-                currentUserEmail = u.email || '';
-                console.log('Detected user:', { id: currentUserId, name: currentUserName, email: currentUserEmail });
-            } catch (e) { console.error('detectUser failed:', e); }
+                currentUser = data.dev_user || {};
+            } catch (e) {}
         }
 
         async function fetchData() {
@@ -289,11 +283,6 @@
                     };
                 });
 
-                if (issues.length > 0) {
-                    console.log('Sample issue owners:', issues[0].owned_by);
-                    console.log('Current user ID:', currentUserId);
-                }
-
                 allIssues.sort((a, b) => {
                     const aLwd = a.lwd ? new Date(a.lwd).getTime() : Infinity;
                     const bLwd = b.lwd ? new Date(b.lwd).getTime() : Infinity;
@@ -339,12 +328,12 @@
 
         function getFilteredByAssignee(list) {
             if (assigneeFilter !== 'mine') return list;
+            const email = currentUser.email || '';
+            const displayId = currentUser.display_id || '';
             return list.filter(i => {
                 return i.owners.some(o => {
-                    if (currentUserId && o.id === currentUserId) return true;
-                    if (currentUserId && o.id && o.id.includes(currentUserId.split(':').pop())) return true;
-                    if (currentUserEmail && o.email === currentUserEmail) return true;
-                    if (currentUserName && (o.full_name === currentUserName || o.display_name === currentUserName)) return true;
+                    if (email && o.email === email) return true;
+                    if (displayId && o.display_id === displayId) return true;
                     return false;
                 });
             });
