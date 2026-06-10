@@ -1,4 +1,4 @@
-name: Uber Deactivation Status
+name: Changappa Tickets Status
 
 on:
   schedule:
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Generate uber_status.json
+      - name: Generate changappa_status.json
         env:
           DEVREV_UBER_PAT: ${{ secrets.DEVREV_UBER_PAT }}
           DEVREV_PAT: ${{ secrets.DEVREV_PAT }}
@@ -25,14 +25,15 @@ jobs:
           OKTA_DOMAIN: devrev.okta.com
           OKTA_UBER_APP_LABEL: Uber for Business
           EMPLOYEE_EMAIL_DOMAIN: devrev.ai
-        run: python okta_uber_status.py
+          CHANGAPPA_EMAIL: changappa.s@devrev.ai
+        run: python changappa_status.py
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain uber_status.json)" ]; then
-            git add uber_status.json
-            git commit -m "chore: refresh uber_status.json"
+          if [ -n "$(git status --porcelain changappa_status.json)" ]; then
+            git add changappa_status.json
+            git commit -m "chore: refresh changappa_status.json"
             git push
           else
             echo "No changes to commit."
