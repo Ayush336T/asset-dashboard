@@ -138,7 +138,34 @@
             font-size: 12px;
             color: #71717a;
         }
-    </style>
+        .tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #2a2a35;
+        }
+        .tab {
+            background: transparent;
+            border: none;
+            color: #a1a1aa;
+            padding: 10px 18px;
+            cursor: pointer;
+            font-size: 14px;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+        }
+        .tab.active {
+            color: #e4e4e7;
+            border-bottom-color: #2563eb;
+        }
+        .tab:hover { color: #e4e4e7; }
+        .view { display: none; }
+        .view.active { display: block; }
+        .badge.uber-pending { background: #78350f; color: #fbbf24; }
+        .badge.uber-done { background: #064e3b; color: #34d399; }
+        .badge.uber-warn { background: #1e3a5f; color: #60a5fa; }
+        .badge.uber-unknown { background: #2a2a35; color: #a1a1aa; }
+</style>
 </head>
 <body>
     <div class="header">
@@ -151,6 +178,13 @@
             <button class="refresh-btn" style="background:#71717a;margin-left:8px" onclick="resetToken()">Reset Token</button>
         </div>
     </div>
+
+    <div class="tabs">
+        <button class="tab active" data-view="assets" onclick="setView('assets')">Asset Collection</button>
+        <button class="tab" data-view="uber" onclick="setView('uber')">Uber Deactivations</button>
+    </div>
+
+    <div class="view active" id="view-assets">
 
     <div class="stats" id="stats">
         <div class="stat-card"><div class="label">Total</div><div class="value total" id="statTotal">-</div></div>
@@ -190,6 +224,36 @@
             <tr><td colspan="8" class="loading">Loading...</td></tr>
         </tbody>
     </table>
+
+    </div>
+
+    <div class="view" id="view-uber">
+        <div class="stats">
+            <div class="stat-card"><div class="label">Total Tickets</div><div class="value total" id="uTotal">-</div></div>
+            <div class="stat-card"><div class="label">Uber Still Assigned</div><div class="value triage" id="uPending">-</div></div>
+            <div class="stat-card"><div class="label">Uber Unassigned</div><div class="value done" id="uUnassigned">-</div></div>
+            <div class="stat-card"><div class="label">Tickets Closed</div><div class="value wip" id="uClosed">-</div></div>
+        </div>
+        <div class="last-updated" id="uberUpdated" style="margin-bottom:12px"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Employee</th>
+                    <th>Email</th>
+                    <th>Ticket Stage</th>
+                    <th>Okta User</th>
+                    <th>Uber Assignment</th>
+                    <th>Status</th>
+                    <th>LWD</th>
+                    <th>Assignee</th>
+                </tr>
+            </thead>
+            <tbody id="uberBody">
+                <tr><td colspan="9" class="loading">Loading...</td></tr>
+            </tbody>
+        </table>
+    </div>
 
     <script>
         function getToken() {
@@ -380,6 +444,78 @@
                     <td>${issue.assignee}</td>
                 </tr>`;
             }).join('');
+        }
+
+        function setView(name) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.view === name));
+            document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === `view-${name}`));
+            if (name === 'uber') loadUberStatus();
+        }
+
+        const STATUS_LABEL = {
+            uber_still_assigned: { text: 'Pending — still in Uber', cls: 'uber-pending' },
+            uber_unassigned: { text: 'Removed from Uber', cls: 'uber-done' },
+            user_deactivated_in_okta: { text: 'Okta deprovisioned', cls: 'uber-done' },
+            ticket_closed: { text: 'Ticket closed', cls: 'uber-warn' },
+            user_not_in_okta: { text: 'User not found in Okta', cls: 'uber-unknown' },
+        };
+
+        async function loadUberStatus() {
+            const body = document.getElementById('uberBody');
+            try {
+                const resp = await fetch(`uber_status.json?t=${Date.now()}`);
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                const data = await resp.json();
+                const tickets = data.tickets || [];
+
+                const pending = tickets.filter(t => t.status === 'uber_still_assigned').length;
+                const unassigned = tickets.filter(t => t.status === 'uber_unassigned' || t.status === 'user_deactivated_in_okta').length;
+                const closed = tickets.filter(t => t.status === 'ticket_closed').length;
+                document.getElementById('uTotal').textContent = tickets.length;
+                document.getElementById('uPending').textContent = pending;
+                document.getElementById('uUnassigned').textContent = unassigned;
+                document.getElementById('uClosed').textContent = closed;
+                document.getElementById('uberUpdated').textContent =
+                    `Last refreshed: ${new Date(data.generated_at).toLocaleString()}`;
+
+                if (!tickets.length) {
+                    body.innerHTML = '<tr><td colspan="9" class="loading">No Uber deactivation tickets found</td></tr>';
+                    return;
+                }
+
+                tickets.sort((a, b) => {
+                    const order = { uber_still_assigned: 0, user_not_in_okta: 1, uber_unassigned: 2, user_deactivated_in_okta: 3, ticket_closed: 4 };
+                    return (order[a.status] ?? 9) - (order[b.status] ?? 9);
+                });
+
+                body.innerHTML = tickets.map(t => {
+                    const meta = STATUS_LABEL[t.status] || { text: t.status, cls: 'uber-unknown' };
+                    const lwd = t.lwd ? new Date(t.lwd).toLocaleDateString() : '-';
+                    const oktaCell = t.okta_user_status === null
+                        ? '<span style="color:#71717a">—</span>'
+                        : (t.okta_user_found
+                            ? `<span style="color:${t.okta_user_status === 'ACTIVE' ? '#34d399' : '#fbbf24'}">${t.okta_user_status || 'unknown'}</span>`
+                            : '<span style="color:#ef4444">not found</span>');
+                    const uberCell = t.uber_assigned === null
+                        ? '<span style="color:#71717a">—</span>'
+                        : (t.uber_assigned
+                            ? '<span style="color:#fbbf24">assigned</span>'
+                            : '<span style="color:#34d399">removed</span>');
+                    return `<tr>
+                        <td><a class="issue-id" href="https://app.devrev.ai/peopleops/works/${t.id}" target="_blank">${t.id}</a></td>
+                        <td class="employee-name">${t.employee}</td>
+                        <td class="date">${t.email || '-'}</td>
+                        <td><span class="badge other">${t.stage || '-'}</span></td>
+                        <td>${oktaCell}</td>
+                        <td>${uberCell}</td>
+                        <td><span class="badge ${meta.cls}">${meta.text}</span></td>
+                        <td class="date">${lwd}</td>
+                        <td>${t.assignee || '-'}</td>
+                    </tr>`;
+                }).join('');
+            } catch (err) {
+                body.innerHTML = `<tr><td colspan="9" class="loading">Could not load uber_status.json (${err.message}). The GitHub Action may not have run yet.</td></tr>`;
+            }
         }
 
         detectUser().then(() => fetchData());

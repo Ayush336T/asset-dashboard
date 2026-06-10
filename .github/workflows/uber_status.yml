@@ -1,0 +1,38 @@
+name: Uber Deactivation Status
+
+on:
+  schedule:
+    # Runs every 30 minutes
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate uber_status.json
+        env:
+          DEVREV_PAT: ${{ secrets.DEVREV_PAT }}
+          OKTA_API_TOKEN: ${{ secrets.OKTA_API_TOKEN }}
+          OKTA_DOMAIN: devrev.okta.com
+          OKTA_UBER_APP_LABEL: Uber for Business
+          EMPLOYEE_EMAIL_DOMAIN: devrev.ai
+        run: python okta_uber_status.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain uber_status.json)" ]; then
+            git add uber_status.json
+            git commit -m "chore: refresh uber_status.json"
+            git push
+          else
+            echo "No changes to commit."
+          fi
