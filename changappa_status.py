@@ -164,17 +164,27 @@ def main():
     else:
         print("[warn] Changappa not found in DevRev; falling back to unfiltered scan")
 
-    # Probe: can this PAT actually fetch a known Uber ticket?
-    for probe_id in ["ISS-2374", "ISS-2363", "ISS-2367"]:
-        try:
-            data = devrev_request(
-                f"works.get?id={urllib.parse.quote(probe_id)}",
-                method="GET",
-            )
-            w = data.get("work", {})
-            print(f"[probe] {probe_id} -> title='{w.get('title', '')[:60]}' owner={[o.get('full_name','') for o in w.get('owned_by', [])]} type={w.get('type')}")
-        except Exception as e:
-            print(f"[probe] {probe_id} -> ERROR: {e}")
+    # Probe: search for tickets by Akanksha by name in title
+    try:
+        data = devrev_request(
+            "works.list",
+            {"type": ["issue", "ticket", "task"], "limit": 100, "title": {"contains": "Akanksha Deswal"}},
+        )
+        works = data.get("works", [])
+        print(f"[probe] title-contains-Akanksha returned {len(works)} works")
+        for w in works[:10]:
+            owners = [o.get('full_name', '') for o in w.get('owned_by', [])]
+            print(f"  - {w.get('display_id')}: {w.get('title', '')[:60]} | owners={owners}")
+    except Exception as e:
+        print(f"[probe] title search ERROR: {e}")
+
+    # Probe: get user info to see which dev_org we are in
+    try:
+        data = devrev_request("dev-users.self", method="GET")
+        u = data.get("dev_user", {})
+        print(f"[probe] PAT is for: {u.get('email', '')} id={u.get('id', '')}")
+    except Exception as e:
+        print(f"[probe] dev-users.self ERROR: {e}")
 
     app_id = find_uber_app_id()
     if not app_id:
