@@ -12,13 +12,16 @@ UBER_APP_LABEL = os.environ.get("OKTA_UBER_APP_LABEL", "Uber for Business")
 EMAIL_DOMAIN = os.environ.get("EMPLOYEE_EMAIL_DOMAIN", "devrev.ai")
 
 
+HTTP_TIMEOUT = 20
+
+
 def devrev_request(path, body):
     url = f"https://api.devrev.ai/{path}"
     data = json.dumps(body).encode()
     req = urllib.request.Request(url, data=data, method="POST")
     req.add_header("Authorization", DEVREV_TOKEN)
     req.add_header("Content-Type", "application/json")
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
         return json.loads(resp.read())
 
 
@@ -28,17 +31,21 @@ def okta_request(path, method="GET"):
     req.add_header("Authorization", f"SSWS {OKTA_TOKEN}")
     req.add_header("Accept", "application/json")
     try:
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
             return resp.status, json.loads(resp.read())
     except urllib.error.HTTPError as e:
         return e.code, None
+    except Exception as e:
+        print(f"[warn] okta {method} {path} failed: {e}")
+        return 0, None
 
 
 def get_uber_tickets():
     issues = []
     total_scanned = 0
     cursor = None
-    while True:
+    pages = 0
+    while pages < 50:
         body = {"type": ["issue"], "limit": 100}
         if cursor:
             body["cursor"] = cursor
@@ -49,9 +56,10 @@ def get_uber_tickets():
             if "Deactivating Uber Account" in w.get("title", ""):
                 issues.append(w)
         cursor = data.get("next_cursor")
+        pages += 1
         if not cursor:
             break
-    print(f"Scanned {total_scanned} issues, matched {len(issues)} uber tickets")
+    print(f"Scanned {total_scanned} issues across {pages} page(s), matched {len(issues)} uber tickets")
     return issues
 
 
@@ -115,7 +123,8 @@ def main():
 
     tickets = get_uber_tickets()
     rows = []
-    for t in tickets:
+    for idx, t in enumerate(tickets, 1):
+        print(f"[{idx}/{len(tickets)}] {t.get('display_id', '')} {t.get('title', '')[:60]}")
         title = t.get("title", "")
         employee = title.replace("Employee Name: ", "").split(" - ")[0].strip()
         email = name_to_email(employee)
