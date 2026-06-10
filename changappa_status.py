@@ -71,7 +71,7 @@ def categorize(title):
 def get_changappa_tickets(owner_id):
     issues = []
     total_scanned = 0
-    samples = []
+    employee_titles = []
     cursor = None
     pages = 0
     while pages < 50:
@@ -88,8 +88,9 @@ def get_changappa_tickets(owner_id):
         total_scanned += len(works)
         for w in works:
             title = w.get("title", "")
-            if len(samples) < 15:
-                samples.append(title[:90])
+            tl = title.lower()
+            if "employee name:" in tl or "deactivat" in tl or "uber" in tl or "id card" in tl:
+                employee_titles.append((w.get("display_id", ""), title[:100]))
             kind = categorize(title)
             if kind:
                 w["_kind"] = kind
@@ -99,9 +100,9 @@ def get_changappa_tickets(owner_id):
         if not cursor:
             break
     print(f"Scanned {total_scanned} works across {pages} page(s); matched {len(issues)} (uber/cab/id-card)")
-    print("[debug] sample titles:")
-    for s in samples:
-        print(f"  - {s}")
+    print(f"[debug] {len(employee_titles)} works whose title looks offboarding-related:")
+    for did, title in employee_titles[:30]:
+        print(f"  - {did}: {title}")
     return issues
 
 
