@@ -164,27 +164,40 @@ def main():
     else:
         print("[warn] Changappa not found in DevRev; falling back to unfiltered scan")
 
-    # Probe: search for tickets by Akanksha by name in title
-    try:
-        data = devrev_request(
-            "works.list",
-            {"type": ["issue", "ticket", "task"], "limit": 100, "title": {"contains": "Akanksha Deswal"}},
-        )
-        works = data.get("works", [])
-        print(f"[probe] title-contains-Akanksha returned {len(works)} works")
-        for w in works[:10]:
-            owners = [o.get('full_name', '') for o in w.get('owned_by', [])]
-            print(f"  - {w.get('display_id')}: {w.get('title', '')[:60]} | owners={owners}")
-    except Exception as e:
-        print(f"[probe] title search ERROR: {e}")
+    # Probe: try each known display_id directly
+    for did in ["ISS-2374", "ISS-2363", "ISS-2367"]:
+        for endpoint in ("issues.get", "works.get"):
+            try:
+                data = devrev_request(
+                    f"{endpoint}?id={urllib.parse.quote(did)}",
+                    method="GET",
+                )
+                key = "issue" if endpoint == "issues.get" else "work"
+                w = data.get(key) or {}
+                print(f"[probe] {endpoint} {did} -> '{w.get('title', '')[:60]}' owner={[o.get('display_id', o.get('full_name','')) for o in w.get('owned_by', [])]}")
+            except Exception as e:
+                print(f"[probe] {endpoint} {did} -> {e}")
 
-    # Probe: get user info to see which dev_org we are in
+    # Probe: list issues filtering only by ownership (no part), and count types
     try:
-        data = devrev_request("dev-users.self", method="GET")
-        u = data.get("dev_user", {})
-        print(f"[probe] PAT is for: {u.get('email', '')} id={u.get('id', '')}")
+        type_counts = {}
+        cursor = None
+        scanned = 0
+        for _ in range(20):
+            body = {"limit": 100}
+            if cursor:
+                body["cursor"] = cursor
+            data = devrev_request("works.list", body)
+            for w in data.get("works", []):
+                t = w.get("type", "?")
+                type_counts[t] = type_counts.get(t, 0) + 1
+            scanned += len(data.get("works", []))
+            cursor = data.get("next_cursor")
+            if not cursor:
+                break
+        print(f"[probe] no-filter scan: {scanned} works, types={type_counts}")
     except Exception as e:
-        print(f"[probe] dev-users.self ERROR: {e}")
+        print(f"[probe] no-filter scan ERROR: {e}")
 
     app_id = find_uber_app_id()
     if not app_id:
