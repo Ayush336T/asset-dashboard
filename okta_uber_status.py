@@ -5,7 +5,7 @@ import urllib.request
 from datetime import datetime, timezone
 
 
-DEVREV_TOKEN = os.environ.get("DEVREV_PAT", "")
+DEVREV_TOKEN = os.environ.get("DEVREV_UBER_PAT") or os.environ.get("DEVREV_PAT", "")
 OKTA_DOMAIN = os.environ.get("OKTA_DOMAIN", "devrev.okta.com")
 OKTA_TOKEN = os.environ.get("OKTA_API_TOKEN", "")
 UBER_APP_LABEL = os.environ.get("OKTA_UBER_APP_LABEL", "Uber for Business")
@@ -37,7 +37,6 @@ def okta_request(path, method="GET"):
 def get_uber_tickets():
     issues = []
     total_scanned = 0
-    sample_titles = []
     cursor = None
     while True:
         body = {"type": ["issue"], "limit": 100}
@@ -47,16 +46,12 @@ def get_uber_tickets():
         works = data.get("works", [])
         total_scanned += len(works)
         for w in works:
-            title = w.get("title", "")
-            if len(sample_titles) < 5:
-                sample_titles.append(title)
-            if "Deactivating Uber Account" in title or "Uber Account" in title or "uber" in title.lower():
+            if "Deactivating Uber Account" in w.get("title", ""):
                 issues.append(w)
         cursor = data.get("next_cursor")
         if not cursor:
             break
-    print(f"[debug] scanned {total_scanned} issues, matched {len(issues)} uber tickets")
-    print(f"[debug] sample titles: {sample_titles}")
+    print(f"Scanned {total_scanned} issues, matched {len(issues)} uber tickets")
     return issues
 
 

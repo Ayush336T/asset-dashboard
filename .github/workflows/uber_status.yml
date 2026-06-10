@@ -19,6 +19,7 @@ jobs:
           python-version: "3.12"
       - name: Generate uber_status.json
         env:
+          DEVREV_UBER_PAT: ${{ secrets.DEVREV_UBER_PAT }}
           DEVREV_PAT: ${{ secrets.DEVREV_PAT }}
           OKTA_API_TOKEN: ${{ secrets.OKTA_API_TOKEN }}
           OKTA_DOMAIN: devrev.okta.com
