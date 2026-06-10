@@ -164,6 +164,18 @@ def main():
     else:
         print("[warn] Changappa not found in DevRev; falling back to unfiltered scan")
 
+    # Probe: can this PAT actually fetch a known Uber ticket?
+    for probe_id in ["ISS-2374", "ISS-2363", "ISS-2367"]:
+        try:
+            data = devrev_request(
+                f"works.get?id={urllib.parse.quote(probe_id)}",
+                method="GET",
+            )
+            w = data.get("work", {})
+            print(f"[probe] {probe_id} -> title='{w.get('title', '')[:60]}' owner={[o.get('full_name','') for o in w.get('owned_by', [])]} type={w.get('type')}")
+        except Exception as e:
+            print(f"[probe] {probe_id} -> ERROR: {e}")
+
     app_id = find_uber_app_id()
     if not app_id:
         print(f"[warn] Could not find Okta app '{UBER_APP_LABEL}'; Uber assignment checks will be skipped")
