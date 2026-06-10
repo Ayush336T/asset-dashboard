@@ -36,19 +36,27 @@ def okta_request(path, method="GET"):
 
 def get_uber_tickets():
     issues = []
+    total_scanned = 0
+    sample_titles = []
     cursor = None
     while True:
         body = {"type": ["issue"], "limit": 100}
         if cursor:
             body["cursor"] = cursor
         data = devrev_request("works.list", body)
-        for w in data.get("works", []):
+        works = data.get("works", [])
+        total_scanned += len(works)
+        for w in works:
             title = w.get("title", "")
-            if "Deactivating Uber Account" in title:
+            if len(sample_titles) < 5:
+                sample_titles.append(title)
+            if "Deactivating Uber Account" in title or "Uber Account" in title or "uber" in title.lower():
                 issues.append(w)
         cursor = data.get("next_cursor")
         if not cursor:
             break
+    print(f"[debug] scanned {total_scanned} issues, matched {len(issues)} uber tickets")
+    print(f"[debug] sample titles: {sample_titles}")
     return issues
 
 
