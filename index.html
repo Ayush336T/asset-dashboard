@@ -233,7 +233,8 @@
             <button class="filter-btn active" data-org="all" onclick="setOrgFilter('all')">All Orgs</button>
             <button class="filter-btn" data-org="peopleops" onclick="setOrgFilter('peopleops')">People Ops</button>
             <button class="filter-btn" data-org="devrev" onclick="setOrgFilter('devrev')">DevRev</button>
-            <span style="margin-left:auto;display:flex;align-items:center;gap:8px">
+            <input id="changappaSearch" type="text" placeholder="Search title, ID, employee..." oninput="setSearch(this.value)" style="flex:1;min-width:200px;background:#1c1c24;border:1px solid #2a2a35;color:#e4e4e7;padding:6px 12px;border-radius:6px;font-size:13px;margin-left:8px">
+            <span style="display:flex;align-items:center;gap:8px">
                 <label style="font-size:13px;color:#a1a1aa">Type:</label>
                 <select id="kindFilter" onchange="setKindFilter(this.value)" style="background:#1c1c24;border:1px solid #2a2a35;color:#e4e4e7;padding:6px 10px;border-radius:6px;font-size:13px">
                     <option value="all">All types</option>
@@ -473,6 +474,7 @@
         let orgSummaries = [];
         let kindFilter = 'all';
         let orgFilter = 'all';
+        let searchQuery = '';
 
         function setKindFilter(k) {
             kindFilter = k;
@@ -482,6 +484,11 @@
         function setOrgFilter(o) {
             orgFilter = o;
             document.querySelectorAll('#view-uber .filter-btn').forEach(b => b.classList.toggle('active', b.dataset.org === o));
+            renderChangappaTable();
+        }
+
+        function setSearch(q) {
+            searchQuery = q.trim().toLowerCase();
             renderChangappaTable();
         }
 
@@ -520,6 +527,14 @@
             let tickets = changappaTickets;
             if (orgFilter !== 'all') tickets = tickets.filter(t => t.org === orgFilter);
             if (kindFilter !== 'all') tickets = tickets.filter(t => t.kind === kindFilter);
+            if (searchQuery) {
+                tickets = tickets.filter(t =>
+                    (t.title || '').toLowerCase().includes(searchQuery) ||
+                    (t.id || '').toLowerCase().includes(searchQuery) ||
+                    (t.employee || '').toLowerCase().includes(searchQuery) ||
+                    (t.stage || '').toLowerCase().includes(searchQuery)
+                );
+            }
 
             if (!tickets.length) {
                 body.innerHTML = '<tr><td colspan="7" class="loading">No tickets found</td></tr>';
