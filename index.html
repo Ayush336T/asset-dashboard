@@ -228,34 +228,38 @@
     </div>
 
     <div class="view" id="view-uber">
-        <div class="stats">
-            <div class="stat-card"><div class="label">Total</div><div class="value total" id="uTotal">-</div></div>
-            <div class="stat-card"><div class="label">Uber</div><div class="value wip" id="uUber">-</div></div>
-            <div class="stat-card"><div class="label">Cab</div><div class="value triage" id="uCab">-</div></div>
-            <div class="stat-card"><div class="label">ID Card</div><div class="value done" id="uIdCard">-</div></div>
-        </div>
+        <div class="stats" id="changappaStats"></div>
         <div class="filters">
-            <button class="filter-btn active" data-kind="all" onclick="setKindFilter('all')">All</button>
-            <button class="filter-btn" data-kind="uber" onclick="setKindFilter('uber')">Uber</button>
-            <button class="filter-btn" data-kind="cab" onclick="setKindFilter('cab')">Cab</button>
-            <button class="filter-btn" data-kind="id_card" onclick="setKindFilter('id_card')">ID Card</button>
+            <button class="filter-btn active" data-org="all" onclick="setOrgFilter('all')">All Orgs</button>
+            <button class="filter-btn" data-org="peopleops" onclick="setOrgFilter('peopleops')">People Ops</button>
+            <button class="filter-btn" data-org="devrev" onclick="setOrgFilter('devrev')">DevRev</button>
+            <span style="margin-left:auto;display:flex;align-items:center;gap:8px">
+                <label style="font-size:13px;color:#a1a1aa">Type:</label>
+                <select id="kindFilter" onchange="setKindFilter(this.value)" style="background:#1c1c24;border:1px solid #2a2a35;color:#e4e4e7;padding:6px 10px;border-radius:6px;font-size:13px">
+                    <option value="all">All types</option>
+                    <option value="uber">Uber</option>
+                    <option value="cab">Cab</option>
+                    <option value="id_card">ID Card / Biometric</option>
+                    <option value="asset">Asset Collection</option>
+                    <option value="other">Other</option>
+                </select>
+            </span>
         </div>
         <div class="last-updated" id="uberUpdated" style="margin-bottom:12px"></div>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Org</th>
                     <th>Type</th>
-                    <th>Employee</th>
+                    <th>Title</th>
                     <th>Stage</th>
-                    <th>Okta User</th>
-                    <th>Uber Assignment</th>
-                    <th>Status</th>
+                    <th>Created</th>
                     <th>LWD</th>
                 </tr>
             </thead>
             <tbody id="uberBody">
-                <tr><td colspan="8" class="loading">Loading...</td></tr>
+                <tr><td colspan="7" class="loading">Loading...</td></tr>
             </tbody>
         </table>
     </div>
@@ -457,28 +461,27 @@
             if (name === 'uber') loadUberStatus();
         }
 
-        const STATUS_LABEL = {
-            uber_still_assigned: { text: 'Pending — still in Uber', cls: 'uber-pending' },
-            uber_unassigned: { text: 'Removed from Uber', cls: 'uber-done' },
-            user_deactivated_in_okta: { text: 'Okta deprovisioned', cls: 'uber-done' },
-            ticket_closed: { text: 'Ticket closed', cls: 'uber-warn' },
-            user_not_in_okta: { text: 'User not in Okta', cls: 'uber-unknown' },
-            pending: { text: 'Pending', cls: 'uber-pending' },
-        };
-
         const KIND_LABEL = {
             uber: 'Uber',
             cab: 'Cab',
             id_card: 'ID Card',
+            asset: 'Asset Collection',
+            other: 'Other',
         };
 
         let changappaTickets = [];
-        let changappaMeta = {};
+        let orgSummaries = [];
         let kindFilter = 'all';
+        let orgFilter = 'all';
 
         function setKindFilter(k) {
             kindFilter = k;
-            document.querySelectorAll('#view-uber .filter-btn').forEach(b => b.classList.toggle('active', b.dataset.kind === k));
+            renderChangappaTable();
+        }
+
+        function setOrgFilter(o) {
+            orgFilter = o;
+            document.querySelectorAll('#view-uber .filter-btn').forEach(b => b.classList.toggle('active', b.dataset.org === o));
             renderChangappaTable();
         }
 
@@ -489,57 +492,61 @@
                 if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
                 const data = await resp.json();
                 changappaTickets = data.tickets || [];
-                changappaMeta = data;
+                orgSummaries = data.orgs || [];
 
-                document.getElementById('uTotal').textContent = changappaTickets.length;
-                document.getElementById('uUber').textContent = changappaTickets.filter(t => t.kind === 'uber').length;
-                document.getElementById('uCab').textContent = changappaTickets.filter(t => t.kind === 'cab').length;
-                document.getElementById('uIdCard').textContent = changappaTickets.filter(t => t.kind === 'id_card').length;
+                renderChangappaStats();
                 document.getElementById('uberUpdated').textContent =
                     `Last refreshed: ${new Date(data.generated_at).toLocaleString()}`;
-
                 renderChangappaTable();
             } catch (err) {
-                body.innerHTML = `<tr><td colspan="8" class="loading">Could not load changappa_status.json (${err.message}). The GitHub Action may not have run yet.</td></tr>`;
+                body.innerHTML = `<tr><td colspan="7" class="loading">Could not load changappa_status.json (${err.message}). The GitHub Action may not have run yet.</td></tr>`;
             }
+        }
+
+        function renderChangappaStats() {
+            const stats = document.getElementById('changappaStats');
+            const cards = [];
+            cards.push(`<div class="stat-card"><div class="label">Total Open</div><div class="value total">${changappaTickets.length}</div></div>`);
+            for (const org of orgSummaries) {
+                const cls = org.error ? 'triage' : 'wip';
+                const value = org.error ? 'error' : (org.count ?? 0);
+                cards.push(`<div class="stat-card"><div class="label">${org.label}</div><div class="value ${cls}">${value}</div>${org.error ? `<div style="font-size:11px;color:#ef4444;margin-top:4px">${org.error.slice(0, 60)}</div>` : ''}</div>`);
+            }
+            stats.innerHTML = cards.join('');
         }
 
         function renderChangappaTable() {
             const body = document.getElementById('uberBody');
             let tickets = changappaTickets;
+            if (orgFilter !== 'all') tickets = tickets.filter(t => t.org === orgFilter);
             if (kindFilter !== 'all') tickets = tickets.filter(t => t.kind === kindFilter);
 
             if (!tickets.length) {
-                body.innerHTML = '<tr><td colspan="8" class="loading">No tickets found</td></tr>';
+                body.innerHTML = '<tr><td colspan="7" class="loading">No tickets found</td></tr>';
                 return;
             }
 
-            const order = { uber_still_assigned: 0, user_not_in_okta: 1, pending: 2, uber_unassigned: 3, user_deactivated_in_okta: 4, ticket_closed: 5 };
-            tickets = [...tickets].sort((a, b) => (order[a.status] ?? 9) - (order[b.status] ?? 9));
+            tickets = [...tickets].sort((a, b) => {
+                const aLwd = a.lwd ? new Date(a.lwd).getTime() : Infinity;
+                const bLwd = b.lwd ? new Date(b.lwd).getTime() : Infinity;
+                if (aLwd !== bLwd) return aLwd - bLwd;
+                return new Date(b.created || 0) - new Date(a.created || 0);
+            });
 
             body.innerHTML = tickets.map(t => {
-                const meta = STATUS_LABEL[t.status] || { text: t.status, cls: 'uber-unknown' };
                 const lwd = t.lwd ? new Date(t.lwd).toLocaleDateString() : '-';
-                const isUber = t.kind === 'uber';
-                const oktaCell = !isUber || t.okta_user_status === null
-                    ? '<span style="color:#71717a">—</span>'
-                    : (t.okta_user_found
-                        ? `<span style="color:${t.okta_user_status === 'ACTIVE' ? '#34d399' : '#fbbf24'}">${t.okta_user_status || 'unknown'}</span>`
-                        : '<span style="color:#ef4444">not found</span>');
-                const uberCell = !isUber || t.uber_assigned === null
-                    ? '<span style="color:#71717a">—</span>'
-                    : (t.uber_assigned
-                        ? '<span style="color:#fbbf24">assigned</span>'
-                        : '<span style="color:#34d399">removed</span>');
+                const created = t.created ? new Date(t.created).toLocaleDateString() : '-';
+                const lwdDate = t.lwd ? new Date(t.lwd) : null;
+                const lwdClass = lwdDate && lwdDate < new Date() ? 'urgent' :
+                    lwdDate && (lwdDate - new Date()) < 7 * 86400000 ? 'warning' : '';
                 return `<tr>
-                    <td><a class="issue-id" href="https://app.devrev.ai/peopleops/works/${t.id}" target="_blank">${t.id}</a></td>
+                    <td><a class="issue-id" href="${t.url}" target="_blank">${t.id}</a></td>
+                    <td><span class="badge other">${t.org_label || t.org}</span></td>
                     <td><span class="badge other">${KIND_LABEL[t.kind] || t.kind}</span></td>
-                    <td class="employee-name">${t.employee}</td>
+                    <td>${t.title || '-'}</td>
                     <td><span class="badge other">${t.stage || '-'}</span></td>
-                    <td>${oktaCell}</td>
-                    <td>${uberCell}</td>
-                    <td><span class="badge ${meta.cls}">${meta.text}</span></td>
-                    <td class="date">${lwd}</td>
+                    <td class="date">${created}</td>
+                    <td class="date ${lwdClass}">${lwd}</td>
                 </tr>`;
             }).join('');
         }

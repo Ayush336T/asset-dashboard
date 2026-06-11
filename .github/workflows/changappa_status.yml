@@ -19,13 +19,8 @@ jobs:
           python-version: "3.12"
       - name: Generate changappa_status.json
         env:
-          DEVREV_UBER_PAT: ${{ secrets.DEVREV_UBER_PAT }}
-          DEVREV_PAT: ${{ secrets.DEVREV_PAT }}
-          OKTA_API_TOKEN: ${{ secrets.OKTA_API_TOKEN }}
-          OKTA_DOMAIN: devrev.okta.com
-          OKTA_UBER_APP_LABEL: Uber for Business
-          EMPLOYEE_EMAIL_DOMAIN: devrev.ai
-          CHANGAPPA_EMAIL: changappa.s@devrev.ai
+          DEVREV_PAT_PEOPLEOPS: ${{ secrets.DEVREV_PAT_PEOPLEOPS }}
+          DEVREV_PAT_DEVREV: ${{ secrets.DEVREV_PAT_DEVREV }}
         run: python changappa_status.py
       - name: Commit if changed
         run: |
