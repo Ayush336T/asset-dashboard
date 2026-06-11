@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T06:56:55.106442+00:00",
+  "generated_at": "2026-06-11T11:22:50.242880+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 527
+      "count": 515
     }
   ],
   "tickets": [
@@ -8462,54 +8462,6 @@
       "url": "https://app.devrev.ai/devrev/works/ISS-136058"
     },
     {
-      "id": "ISS-136034",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Add New Hire to Bangalore Office WhatsApp Group ",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-12-22T00:00:09.715Z",
-      "lwd": "2024-12-23T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-136034"
-    },
-    {
-      "id": "ISS-136033",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Conduct Office Tour for New Hire ",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-12-22T00:00:09.16Z",
-      "lwd": "2024-12-23T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-136033"
-    },
-    {
-      "id": "ISS-136031",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Share Wi-Fi Passcode with New Hire ",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-12-22T00:00:09.06Z",
-      "lwd": "2024-12-23T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-136031"
-    },
-    {
-      "id": "ISS-136029",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Introduce New Hire to Team Members and Buddy ",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-12-22T00:00:07.543Z",
-      "lwd": "2024-12-23T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-136029"
-    },
-    {
       "id": "ISS-136024",
       "org": "devrev",
       "org_label": "DevRev",
@@ -8520,18 +8472,6 @@
       "created": "2024-12-22T00:00:03.941Z",
       "lwd": "2024-12-23T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-136024"
-    },
-    {
-      "id": "ISS-136023",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Add Laptop Asset Details to Office Inventory ",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-12-22T00:00:03.753Z",
-      "lwd": "2024-12-23T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-136023"
     },
     {
       "id": "ISS-135774",
@@ -8606,18 +8546,6 @@
       "url": "https://app.devrev.ai/devrev/works/ISS-133333"
     },
     {
-      "id": "ISS-132214",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Assign Urban Vault Access Card to New Hire",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-12-02T06:36:29.108Z",
-      "lwd": "2024-12-03T06:36:15.101Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-132214"
-    },
-    {
       "id": "ISS-131198",
       "org": "devrev",
       "org_label": "DevRev",
@@ -8628,78 +8556,6 @@
       "created": "2024-11-26T12:13:25.355Z",
       "lwd": "2024-12-02T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-131198"
-    },
-    {
-      "id": "ISS-131143",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Source Laptop for New Hire",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-11-26T12:11:38.893Z",
-      "lwd": "2024-11-30T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-131143"
-    },
-    {
-      "id": "ISS-129006",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Internet access",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2024-11-13T14:22:50.119Z",
-      "lwd": "2024-11-14T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-129006"
-    },
-    {
-      "id": "ISS-128809",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Add asset detail to EZ Office - India",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2024-11-13T05:49:29.824Z",
-      "lwd": "2024-11-14T05:49:17.163Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-128809"
-    },
-    {
-      "id": "ISS-127743",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Reassign the Issues to the New Hire\u2019s DevRev Email using /MergeUser Command",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2024-11-07T00:00:03.908Z",
-      "lwd": "2024-11-11T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-127743"
-    },
-    {
-      "id": "ISS-126252",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": " Source Laptop for New Hire",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2024-10-28T10:50:47.323Z",
-      "lwd": "2024-11-16T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-126252"
-    },
-    {
-      "id": "ISS-126251",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Office access",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2024-10-28T10:50:45.822Z",
-      "lwd": "2024-11-18T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-126251"
     }
   ]
 }
