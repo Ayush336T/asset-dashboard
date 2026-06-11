@@ -246,7 +246,10 @@
                 </select>
             </span>
         </div>
-        <div class="last-updated" id="uberUpdated" style="margin-bottom:12px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+            <div class="last-updated" id="uberUpdated"></div>
+            <button class="refresh-btn" id="changappaRefreshBtn" onclick="triggerChangappaRefresh()" style="font-size:12px;padding:6px 12px">Force refresh from DevRev</button>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -490,6 +493,52 @@
         function setSearch(q) {
             searchQuery = q.trim().toLowerCase();
             renderChangappaTable();
+        }
+
+        function getGithubToken() {
+            let t = localStorage.getItem('gh_pat');
+            if (!t) {
+                t = prompt('Paste a GitHub fine-grained PAT with Actions: write scope on Ayush336T/asset-dashboard:');
+                if (t) {
+                    t = t.trim();
+                    localStorage.setItem('gh_pat', t);
+                }
+            }
+            return t;
+        }
+
+        async function triggerChangappaRefresh() {
+            const btn = document.getElementById('changappaRefreshBtn');
+            const token = getGithubToken();
+            if (!token) return;
+            btn.disabled = true;
+            const originalText = btn.textContent;
+            btn.textContent = 'Triggering...';
+            try {
+                const resp = await fetch('https://api.github.com/repos/Ayush336T/asset-dashboard/actions/workflows/changappa_status.yml/dispatches', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github+json',
+                        'X-GitHub-Api-Version': '2022-11-28',
+                    },
+                    body: JSON.stringify({ ref: 'main' }),
+                });
+                if (resp.status === 401 || resp.status === 403) {
+                    localStorage.removeItem('gh_pat');
+                    throw new Error('Token rejected — cleared. Click again to re-enter.');
+                }
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                btn.textContent = 'Triggered — refresh in ~30s';
+                setTimeout(async () => {
+                    await loadUberStatus();
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                }, 30000);
+            } catch (err) {
+                btn.textContent = `Error: ${err.message}`;
+                setTimeout(() => { btn.textContent = originalText; btn.disabled = false; }, 4000);
+            }
         }
 
         async function loadUberStatus() {
