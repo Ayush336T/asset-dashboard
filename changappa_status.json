@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-12T06:21:09.817378+00:00",
+  "generated_at": "2026-06-12T10:47:14.002440+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 204
+      "count": 207
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2528",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Abhinav Singh - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Abhinav Singh",
+      "stage": "triage",
+      "created": "2026-06-12T09:35:47.238Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2528"
+    },
+    {
+      "id": "ISS-2522",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Abhinav Singh - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Abhinav Singh",
+      "stage": "triage",
+      "created": "2026-06-12T09:35:46.316Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2522"
+    },
+    {
+      "id": "ISS-2517",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Abhinav Singh - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Abhinav Singh",
+      "stage": "triage",
+      "created": "2026-06-12T09:35:44.807Z",
+      "lwd": "2026-06-30T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2517"
+    },
     {
       "id": "ISS-2497",
       "org": "peopleops",
@@ -104,9 +140,9 @@
       "title": "Employee Name: Alejandro Costa - Deactivating Uber Account",
       "kind": "uber",
       "employee": "Alejandro Costa",
-      "stage": "triage",
+      "stage": "LWD Changed",
       "created": "2026-06-10T20:04:10.877Z",
-      "lwd": "2026-06-23T00:00:00Z",
+      "lwd": "2026-06-27T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2423"
     },
     {
