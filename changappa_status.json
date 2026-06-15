@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T10:44:21.604233+00:00",
+  "generated_at": "2026-06-15T16:10:55.064138+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 207
+      "count": 208
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2544",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Gaurav Arora - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Gaurav Arora",
+      "stage": "triage",
+      "created": "2026-06-15T14:36:52.876Z",
+      "lwd": "2026-08-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2544"
+    },
     {
       "id": "ISS-2528",
       "org": "peopleops",
