@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-16T05:37:29.147417+00:00",
+  "generated_at": "2026-06-16T10:31:34.405228+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 208
+      "count": 211
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2584",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Prakhar Agarwal - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Prakhar Agarwal",
+      "stage": "triage",
+      "created": "2026-06-16T06:03:30.024Z",
+      "lwd": "2026-06-27T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2584"
+    },
+    {
+      "id": "ISS-2568",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Prakhar Agarwal - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Prakhar Agarwal",
+      "stage": "triage",
+      "created": "2026-06-16T06:03:24.711Z",
+      "lwd": "2026-06-26T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2568"
+    },
+    {
+      "id": "ISS-2563",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Prakhar Agarwal - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Prakhar Agarwal",
+      "stage": "triage",
+      "created": "2026-06-16T06:03:21.045Z",
+      "lwd": "2026-06-27T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2563"
+    },
     {
       "id": "ISS-2544",
       "org": "peopleops",
