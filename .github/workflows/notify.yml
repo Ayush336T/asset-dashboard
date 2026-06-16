@@ -17,5 +17,6 @@ jobs:
       - name: Send reminders
         env:
           DEVREV_PAT: ${{ secrets.DEVREV_PAT }}
+          DEVREV_PAT_PEOPLEOPS: ${{ secrets.DEVREV_PAT_PEOPLEOPS }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python notify.py

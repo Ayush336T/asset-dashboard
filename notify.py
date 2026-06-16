@@ -5,42 +5,23 @@ from datetime import datetime, timezone, timedelta
 
 
 DEVREV_TOKEN = os.environ.get("DEVREV_PAT", "")
+CHANGAPPA_TOKEN = os.environ.get("DEVREV_PAT_PEOPLEOPS", "")
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL", "")
-CHANGAPPA_EMAIL = "changappa.s@devrev.ai"
 
 
-def devrev_request(path, body=None, method="POST"):
+def devrev_request(path, body=None, method="POST", token=None):
     url = f"https://api.devrev.ai/{path}"
     data = json.dumps(body).encode() if body is not None else None
     req = urllib.request.Request(url, data=data, method=method)
-    req.add_header("Authorization", DEVREV_TOKEN)
+    req.add_header("Authorization", token or DEVREV_TOKEN)
     req.add_header("Content-Type", "application/json")
     with urllib.request.urlopen(req) as resp:
         return json.loads(resp.read())
 
 
-def find_self_id():
-    data = devrev_request("dev-users.self", method="GET")
+def find_self_id(token=None):
+    data = devrev_request("dev-users.self", method="GET", token=token)
     return data.get("dev_user", {}).get("id")
-
-
-def find_user_id_by_email(email):
-    cursor = None
-    pages = 0
-    target = email.lower()
-    while pages < 50:
-        body = {"limit": 100}
-        if cursor:
-            body["cursor"] = cursor
-        data = devrev_request("dev-users.list", body)
-        for u in data.get("dev_users", []):
-            if (u.get("email") or "").lower() == target:
-                return u.get("id")
-        cursor = data.get("next_cursor")
-        pages += 1
-        if not cursor:
-            break
-    return None
 
 
 def send_slack(message):
@@ -78,7 +59,7 @@ def get_asset_collection_issues(owner_ids):
 def main():
     print("Checking asset collection issues for upcoming LWDs...")
     self_id = find_self_id()
-    changappa_id = find_user_id_by_email(CHANGAPPA_EMAIL)
+    changappa_id = find_self_id(token=CHANGAPPA_TOKEN) if CHANGAPPA_TOKEN else None
     owner_ids = [i for i in (self_id, changappa_id) if i]
     print(f"Filtering to owners: self={self_id}, changappa={changappa_id}")
 
