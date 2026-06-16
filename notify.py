@@ -57,8 +57,9 @@ def main():
 
     alerts = []
     for issue in issues:
-        stage = issue.get("stage", {}).get("name", "")
-        if stage in ("done", "resolved", "closed"):
+        stage_name = issue.get("stage", {}).get("name", "")
+        stage_state = issue.get("stage", {}).get("state", {}).get("name", "")
+        if stage_state == "closed" or stage_name in ("done", "resolved"):
             continue
 
         lwd = issue.get("target_close_date")
