@@ -6,16 +6,28 @@ from datetime import datetime, timezone, timedelta
 
 DEVREV_TOKEN = os.environ.get("DEVREV_PAT", "")
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL", "")
+CHANGAPPA_EMAIL = "changappa.s@devrev.ai"
 
 
-def devrev_request(path, body):
+def devrev_request(path, body=None, method="POST"):
     url = f"https://api.devrev.ai/{path}"
-    data = json.dumps(body).encode()
-    req = urllib.request.Request(url, data=data, method="POST")
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(url, data=data, method=method)
     req.add_header("Authorization", DEVREV_TOKEN)
     req.add_header("Content-Type", "application/json")
     with urllib.request.urlopen(req) as resp:
         return json.loads(resp.read())
+
+
+def find_self_id():
+    data = devrev_request("dev-users.self", method="GET")
+    return data.get("dev_user", {}).get("id")
+
+
+def find_user_id_by_email(email):
+    data = devrev_request("dev-users.list", {"email": [email], "limit": 1})
+    users = data.get("dev_users", [])
+    return users[0].get("id") if users else None
 
 
 def send_slack(message):
@@ -31,11 +43,12 @@ def send_slack(message):
         print(f"Slack notification failed: {e}")
 
 
-def get_asset_collection_issues():
+def get_asset_collection_issues(owner_ids):
     issues = []
     cursor = None
-    while True:
-        body = {"type": ["issue"], "limit": 100}
+    pages = 0
+    while pages < 50:
+        body = {"type": ["issue"], "limit": 100, "owned_by": owner_ids}
         if cursor:
             body["cursor"] = cursor
         data = devrev_request("works.list", body)
@@ -43,6 +56,7 @@ def get_asset_collection_issues():
             if "Asset Collection" in w.get("title", ""):
                 issues.append(w)
         cursor = data.get("next_cursor")
+        pages += 1
         if not cursor:
             break
     return issues
@@ -50,13 +64,20 @@ def get_asset_collection_issues():
 
 def main():
     print("Checking asset collection issues for upcoming LWDs...")
-    issues = get_asset_collection_issues()
+    self_id = find_self_id()
+    changappa_id = find_user_id_by_email(CHANGAPPA_EMAIL)
+    owner_ids = [i for i in (self_id, changappa_id) if i]
+    print(f"Filtering to owners: self={self_id}, changappa={changappa_id}")
+
+    issues = get_asset_collection_issues(owner_ids)
     today = datetime.now(timezone.utc).date()
     tomorrow = today + timedelta(days=1)
     day_after = today + timedelta(days=2)
 
     alerts = []
     for issue in issues:
+        if issue.get("actual_close_date"):
+            continue
         stage_name = issue.get("stage", {}).get("name", "")
         stage_state = issue.get("stage", {}).get("state", {}).get("name", "")
         if stage_state == "closed" or stage_name in ("done", "resolved"):
