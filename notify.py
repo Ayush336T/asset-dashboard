@@ -25,9 +25,22 @@ def find_self_id():
 
 
 def find_user_id_by_email(email):
-    data = devrev_request("dev-users.list", {"email": [email], "limit": 1})
-    users = data.get("dev_users", [])
-    return users[0].get("id") if users else None
+    cursor = None
+    pages = 0
+    target = email.lower()
+    while pages < 50:
+        body = {"limit": 100}
+        if cursor:
+            body["cursor"] = cursor
+        data = devrev_request("dev-users.list", body)
+        for u in data.get("dev_users", []):
+            if (u.get("email") or "").lower() == target:
+                return u.get("id")
+        cursor = data.get("next_cursor")
+        pages += 1
+        if not cursor:
+            break
+    return None
 
 
 def send_slack(message):
