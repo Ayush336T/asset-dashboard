@@ -563,6 +563,8 @@
             const stats = document.getElementById('changappaStats');
             const cards = [];
             cards.push(`<div class="stat-card"><div class="label">Total Open</div><div class="value total">${changappaTickets.length}</div></div>`);
+            const assetCount = changappaTickets.filter(t => t.kind === 'asset').length;
+            cards.push(`<div class="stat-card"><div class="label">Asset Collection</div><div class="value triage">${assetCount}</div></div>`);
             for (const org of orgSummaries) {
                 const cls = org.error ? 'triage' : 'wip';
                 const value = org.error ? 'error' : (org.count ?? 0);
@@ -591,6 +593,9 @@
             }
 
             tickets = [...tickets].sort((a, b) => {
+                const aAsset = a.kind === 'asset' ? 0 : 1;
+                const bAsset = b.kind === 'asset' ? 0 : 1;
+                if (aAsset !== bAsset) return aAsset - bAsset;
                 const aLwd = a.lwd ? new Date(a.lwd).getTime() : Infinity;
                 const bLwd = b.lwd ? new Date(b.lwd).getTime() : Infinity;
                 if (aLwd !== bLwd) return aLwd - bLwd;
