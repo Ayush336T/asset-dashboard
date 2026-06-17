@@ -42,9 +42,7 @@ def get_open_tickets(token, owner_id):
             body["cursor"] = cursor
         data = devrev_request(token, "works.list", body)
         for w in data.get("works", []):
-            stage_name = w.get("stage", {}).get("name", "")
-            stage_state = w.get("stage", {}).get("state", {}).get("name", "")
-            if stage_state == "closed" or stage_name in ("done", "resolved"):
+            if _is_closed(w):
                 continue
             issues.append(w)
         cursor = data.get("next_cursor")
@@ -52,6 +50,36 @@ def get_open_tickets(token, owner_id):
         if not cursor:
             break
     return issues
+
+
+def get_open_asset_collection_tickets(token):
+    issues = []
+    cursor = None
+    pages = 0
+    while pages < 50:
+        body = {"type": ["issue", "ticket", "task"], "limit": 100}
+        if cursor:
+            body["cursor"] = cursor
+        data = devrev_request(token, "works.list", body)
+        for w in data.get("works", []):
+            if "asset collection" not in w.get("title", "").lower():
+                continue
+            if _is_closed(w):
+                continue
+            issues.append(w)
+        cursor = data.get("next_cursor")
+        pages += 1
+        if not cursor:
+            break
+    return issues
+
+
+def _is_closed(w):
+    if w.get("actual_close_date"):
+        return True
+    stage_name = w.get("stage", {}).get("name", "")
+    stage_state = w.get("stage", {}).get("state", {}).get("name", "")
+    return stage_state == "closed" or stage_name in ("done", "resolved")
 
 
 def categorize(title):
@@ -69,6 +97,7 @@ def categorize(title):
 
 def main():
     rows = []
+    seen_ids = set()
     org_summaries = []
     for org in ORGS:
         token = os.environ.get(org["token_env"], "")
@@ -79,15 +108,22 @@ def main():
         try:
             self_id = find_self_id(token)
             tickets = get_open_tickets(token, self_id)
+            if org["slug"] == "peopleops":
+                extra = get_open_asset_collection_tickets(token)
+                owned_ids = {t.get("id") for t in tickets}
+                tickets = tickets + [t for t in extra if t.get("id") not in owned_ids]
         except Exception as e:
             print(f"[error] {org['slug']}: {e}")
             org_summaries.append({"slug": org["slug"], "label": org["label"], "error": str(e)})
             continue
 
-        print(f"{org['slug']}: {len(tickets)} open tickets owned by {self_id}")
+        print(f"{org['slug']}: {len(tickets)} open tickets (owned by {self_id} + asset-collection in peopleops)")
         org_summaries.append({"slug": org["slug"], "label": org["label"], "count": len(tickets)})
 
         for w in tickets:
+            if w.get("id") in seen_ids:
+                continue
+            seen_ids.add(w.get("id"))
             title = w.get("title", "")
             kind = categorize(title)
             employee = ""
