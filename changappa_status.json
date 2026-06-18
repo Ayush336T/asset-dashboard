@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18T16:00:44.442851+00:00",
+  "generated_at": "2026-06-18T18:33:25.815486+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 277
+      "count": 281
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2641",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Sudhanshu Kumar - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Sudhanshu Kumar",
+      "stage": "triage",
+      "created": "2026-06-18T16:44:47.078Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2641"
+    },
+    {
+      "id": "ISS-2633",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Sudhanshu Kumar - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Sudhanshu Kumar",
+      "stage": "triage",
+      "created": "2026-06-18T16:44:45.138Z",
+      "lwd": "2026-06-30T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2633"
+    },
+    {
+      "id": "ISS-2628",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Sudhanshu Kumar - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Sudhanshu Kumar",
+      "stage": "triage",
+      "created": "2026-06-18T16:44:43.369Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2628"
+    },
     {
       "id": "ISS-2611",
       "org": "peopleops",
@@ -2568,6 +2604,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2642",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Sudhanshu Kumar - Asset Collection",
+      "kind": "asset",
+      "employee": "Sudhanshu Kumar",
+      "stage": "triage",
+      "created": "2026-06-18T16:44:47.135Z",
+      "lwd": "2026-06-30T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2642"
     },
     {
       "id": "ISS-2616",
