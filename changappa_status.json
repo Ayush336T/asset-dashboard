@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18T08:53:39.520474+00:00",
+  "generated_at": "2026-06-18T12:25:01.768441+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 278
+      "count": 277
     },
     {
       "slug": "devrev",
@@ -2760,18 +2760,6 @@
       "created": "2026-06-05T05:14:32.224Z",
       "lwd": "2026-07-17T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2277"
-    },
-    {
-      "id": "ISS-2262",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Prateek Chaudhury - Asset Collection",
-      "kind": "asset",
-      "employee": "Prateek Chaudhury",
-      "stage": "triage",
-      "created": "2026-06-04T08:55:45.293Z",
-      "lwd": "2026-06-16T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2262"
     },
     {
       "id": "ISS-2211",
