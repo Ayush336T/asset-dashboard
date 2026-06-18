@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18T18:33:25.815486+00:00",
+  "generated_at": "2026-06-18T21:10:24.936645+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 281
+      "count": 283
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2651",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Mar\u00eda Carolina Boschini - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Mar\u00eda Carolina Boschini",
+      "stage": "triage",
+      "created": "2026-06-18T18:34:06.688Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2651"
+    },
     {
       "id": "ISS-2641",
       "org": "peopleops",
@@ -2604,6 +2616,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2664",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Mar\u00eda Carolina Boschini - Asset Collection",
+      "kind": "asset",
+      "employee": "Mar\u00eda Carolina Boschini",
+      "stage": "triage",
+      "created": "2026-06-18T18:34:12.549Z",
+      "lwd": "2026-06-30T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2664"
     },
     {
       "id": "ISS-2642",
