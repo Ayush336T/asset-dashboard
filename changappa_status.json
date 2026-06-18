@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18T21:10:24.936645+00:00",
+  "generated_at": "2026-06-18T23:06:57.016545+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 283
+      "count": 285
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2674",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Max Batjes - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Max Batjes",
+      "stage": "triage",
+      "created": "2026-06-18T21:39:04.054Z",
+      "lwd": "2026-07-02T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2674"
+    },
     {
       "id": "ISS-2651",
       "org": "peopleops",
@@ -2616,6 +2628,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2692",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Max Batjes - Asset Collection",
+      "kind": "asset",
+      "employee": "Max Batjes",
+      "stage": "triage",
+      "created": "2026-06-18T21:39:09.948Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2692"
     },
     {
       "id": "ISS-2664",
