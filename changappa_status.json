@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T05:24:54.472944+00:00",
+  "generated_at": "2026-06-22T11:15:23.114631+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 285
+      "count": 284
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2699",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shivanshu Mishra - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Shivanshu Mishra",
+      "stage": "triage",
+      "created": "2026-06-22T05:39:42.837Z",
+      "lwd": "2026-06-23T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2699"
+    },
     {
       "id": "ISS-2674",
       "org": "peopleops",
@@ -2630,6 +2642,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-2707",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shivanshu Mishra - Asset Collection",
+      "kind": "asset",
+      "employee": "Shivanshu Mishra",
+      "stage": "triage",
+      "created": "2026-06-22T05:39:47.02Z",
+      "lwd": "2026-06-23T05:39:31.19Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2707"
+    },
+    {
       "id": "ISS-2692",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -2774,18 +2798,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2395"
     },
     {
-      "id": "ISS-2380",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Akanksha Deswal - Asset Collection",
-      "kind": "asset",
-      "employee": "Akanksha Deswal",
-      "stage": "triage",
-      "created": "2026-06-09T10:11:24.954Z",
-      "lwd": "2026-06-12T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2380"
-    },
-    {
       "id": "ISS-2357",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -2858,18 +2870,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2277"
     },
     {
-      "id": "ISS-2211",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: P Mithun - Asset Collection",
-      "kind": "asset",
-      "employee": "P Mithun",
-      "stage": "triage",
-      "created": "2026-06-02T10:56:12.355Z",
-      "lwd": "2026-06-19T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2211"
-    },
-    {
       "id": "ISS-2163",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -2892,18 +2892,6 @@
       "created": "2026-06-01T06:21:29.371Z",
       "lwd": "2026-06-26T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2143"
-    },
-    {
-      "id": "ISS-2114",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Devanshu Dangi - Asset Collection",
-      "kind": "asset",
-      "employee": "Devanshu Dangi",
-      "stage": "On Hold",
-      "created": "2026-06-01T06:17:47.448Z",
-      "lwd": "2026-06-07T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2114"
     },
     {
       "id": "ISS-2087",
