@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-23T11:55:03.983039+00:00",
+  "generated_at": "2026-06-23T14:55:00.490052+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 284
+      "count": 286
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2723",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Alexander Mastroianni - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Alexander Mastroianni",
+      "stage": "triage",
+      "created": "2026-06-23T14:42:40.766Z",
+      "lwd": "2026-07-04T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2723"
+    },
     {
       "id": "ISS-2699",
       "org": "peopleops",
@@ -2640,6 +2652,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2718",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Alexander Mastroianni - Asset Collection",
+      "kind": "asset",
+      "employee": "Alexander Mastroianni",
+      "stage": "triage",
+      "created": "2026-06-23T14:42:38.655Z",
+      "lwd": "2026-07-03T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2718"
     },
     {
       "id": "ISS-2707",
