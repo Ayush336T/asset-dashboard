@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T22:41:20.630148+00:00",
+  "generated_at": "2026-06-23T23:42:33.063466+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -2696,7 +2696,7 @@
       "title": "Employee Name: Mar\u00eda Carolina Boschini - Asset Collection",
       "kind": "asset",
       "employee": "Mar\u00eda Carolina Boschini",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-06-18T18:34:12.549Z",
       "lwd": "2026-06-30T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2664"
