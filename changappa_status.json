@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-24T08:47:47.455714+00:00",
+  "generated_at": "2026-06-24T11:35:07.815514+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 286
+      "count": 288
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2741",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Neel Patel - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Neel Patel",
+      "stage": "triage",
+      "created": "2026-06-24T10:40:37.029Z",
+      "lwd": "2026-07-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2741"
+    },
     {
       "id": "ISS-2723",
       "org": "peopleops",
@@ -2652,6 +2664,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2747",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Neel Patel - Asset Collection",
+      "kind": "asset",
+      "employee": "Neel Patel",
+      "stage": "In Progress",
+      "created": "2026-06-24T10:40:39.009Z",
+      "lwd": "2026-06-30T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2747"
     },
     {
       "id": "ISS-2718",
