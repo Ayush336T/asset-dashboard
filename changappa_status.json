@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-25T08:05:49.489032+00:00",
+  "generated_at": "2026-06-25T10:54:14.994447+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 287
+      "count": 303
     },
     {
       "slug": "devrev",
@@ -13,6 +13,150 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2802",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Jayakishan - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Anirudh Jayakishan",
+      "stage": "triage",
+      "created": "2026-06-25T10:32:21.407Z",
+      "lwd": "2026-06-26T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2802"
+    },
+    {
+      "id": "ISS-2800",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Jayakishan - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Anirudh Jayakishan",
+      "stage": "triage",
+      "created": "2026-06-25T10:32:20.778Z",
+      "lwd": "2026-06-27T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2800"
+    },
+    {
+      "id": "ISS-2796",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Jayakishan - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Anirudh Jayakishan",
+      "stage": "triage",
+      "created": "2026-06-25T10:32:17.358Z",
+      "lwd": "2026-06-27T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2796"
+    },
+    {
+      "id": "ISS-2786",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:51.278Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2786"
+    },
+    {
+      "id": "ISS-2783",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:50.448Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2783"
+    },
+    {
+      "id": "ISS-2781",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:50.384Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2781"
+    },
+    {
+      "id": "ISS-2776",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:44.302Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2776"
+    },
+    {
+      "id": "ISS-2767",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:39.827Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2767"
+    },
+    {
+      "id": "ISS-2766",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:39.129Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2766"
+    },
+    {
+      "id": "ISS-2756",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Koosh Gupta - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Koosh Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:28:00.667Z",
+      "lwd": "2026-07-04T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2756"
+    },
+    {
+      "id": "ISS-2753",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Koosh Gupta - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Koosh Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:27:56.98Z",
+      "lwd": "2026-07-03T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2753"
+    },
+    {
+      "id": "ISS-2752",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Koosh Gupta - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Koosh Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:27:56.959Z",
+      "lwd": "2026-07-04T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2752"
+    },
     {
       "id": "ISS-2741",
       "org": "peopleops",
@@ -2664,6 +2808,54 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2808",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Jayakishan - Asset Collection",
+      "kind": "asset",
+      "employee": "Anirudh Jayakishan",
+      "stage": "triage",
+      "created": "2026-06-25T10:32:22.805Z",
+      "lwd": "2026-06-26T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2808"
+    },
+    {
+      "id": "ISS-2788",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - Asset Collection",
+      "kind": "asset",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:51.689Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2788"
+    },
+    {
+      "id": "ISS-2771",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Aryan Gupta - Asset Collection",
+      "kind": "asset",
+      "employee": "Aryan Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:43:42.604Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2771"
+    },
+    {
+      "id": "ISS-2758",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Koosh Gupta - Asset Collection",
+      "kind": "asset",
+      "employee": "Koosh Gupta",
+      "stage": "triage",
+      "created": "2026-06-25T09:28:00.712Z",
+      "lwd": "2026-07-03T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2758"
     },
     {
       "id": "ISS-2747",
