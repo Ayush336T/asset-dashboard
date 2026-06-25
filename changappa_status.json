@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-25T04:40:38.114182+00:00",
+  "generated_at": "2026-06-25T08:05:49.489032+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 288
+      "count": 287
     },
     {
       "slug": "devrev",
@@ -2784,18 +2784,6 @@
       "created": "2026-06-12T09:35:45.319Z",
       "lwd": "2026-06-30T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2520"
-    },
-    {
-      "id": "ISS-2499",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Shatakshi Gupta - Asset Collection",
-      "kind": "asset",
-      "employee": "Shatakshi Gupta",
-      "stage": "triage",
-      "created": "2026-06-12T05:17:05.336Z",
-      "lwd": "2026-06-25T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2499"
     },
     {
       "id": "ISS-2473",
