@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-30T04:38:14.219692+00:00",
+  "generated_at": "2026-06-30T08:20:43.224167+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 305
+      "count": 307
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2835",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Kunal Khadalia - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Kunal Khadalia",
+      "stage": "triage",
+      "created": "2026-06-30T07:51:25.699Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2835"
+    },
     {
       "id": "ISS-2809",
       "org": "peopleops",
@@ -140,9 +152,9 @@
       "title": "Employee Name: Koosh Gupta - ID Card/Biometric Access",
       "kind": "id_card",
       "employee": "Koosh Gupta",
-      "stage": "triage",
+      "stage": "LWD Changed",
       "created": "2026-06-25T09:28:00.667Z",
-      "lwd": "2026-07-04T00:00:00Z",
+      "lwd": "2026-07-11T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2756"
     },
     {
@@ -152,9 +164,9 @@
       "title": "Employee Name: Koosh Gupta - Cab Deactivation",
       "kind": "cab",
       "employee": "Koosh Gupta",
-      "stage": "triage",
+      "stage": "LWD Changed",
       "created": "2026-06-25T09:27:56.98Z",
-      "lwd": "2026-07-03T00:00:00Z",
+      "lwd": "2026-07-10T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2753"
     },
     {
@@ -164,9 +176,9 @@
       "title": "Employee Name: Koosh Gupta - Deactivating Uber Account",
       "kind": "uber",
       "employee": "Koosh Gupta",
-      "stage": "triage",
+      "stage": "LWD Changed",
       "created": "2026-06-25T09:27:56.959Z",
-      "lwd": "2026-07-04T00:00:00Z",
+      "lwd": "2026-07-11T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2752"
     },
     {
@@ -2822,6 +2834,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-2854",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Kunal Khadalia - Asset Collection",
+      "kind": "asset",
+      "employee": "Kunal Khadalia",
+      "stage": "triage",
+      "created": "2026-06-30T07:51:33.021Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2854"
+    },
+    {
       "id": "ISS-2820",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -2876,9 +2900,9 @@
       "title": "Employee Name: Koosh Gupta - Asset Collection",
       "kind": "asset",
       "employee": "Koosh Gupta",
-      "stage": "triage",
+      "stage": "LWD Changed",
       "created": "2026-06-25T09:28:00.712Z",
-      "lwd": "2026-07-03T00:00:00Z",
+      "lwd": "2026-07-10T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2758"
     },
     {
