@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T23:13:17.035213+00:00",
+  "generated_at": "2026-07-01T01:34:50.787059+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 515
+      "count": 516
     }
   ],
   "tickets": [
@@ -3696,6 +3696,18 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
+    },
+    {
+      "id": "ISS-336210",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Aryan Mahindroo)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-07-01T00:00:13.509Z",
+      "lwd": "2026-07-10T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-336210"
     },
     {
       "id": "ISS-317727",
