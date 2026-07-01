@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T06:10:10.016419+00:00",
+  "generated_at": "2026-07-01T10:16:16.327840+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 516
+      "count": 515
     }
   ],
   "tickets": [
@@ -3708,18 +3708,6 @@
       "created": "2026-07-01T00:00:13.509Z",
       "lwd": "2026-07-10T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-336210"
-    },
-    {
-      "id": "ISS-317727",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Admin Checklist: Office Setup for New Hire (Akshata Nagarkoti)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2026-06-10T00:00:11.969Z",
-      "lwd": "2026-07-05T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-317727"
     },
     {
       "id": "ISS-295975",
