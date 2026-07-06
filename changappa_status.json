@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-07-06T11:01:39.418899+00:00",
+  "generated_at": "2026-07-06T14:34:22.934274+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 313
+      "count": 315
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 516
+      "count": 515
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2909",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Grega Podobnik - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Grega Podobnik",
+      "stage": "triage",
+      "created": "2026-07-06T11:16:07.124Z",
+      "lwd": "2026-08-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2909"
+    },
     {
       "id": "ISS-2886",
       "org": "peopleops",
@@ -2882,6 +2894,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-2919",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Grega Podobnik - Asset Collection",
+      "kind": "asset",
+      "employee": "Grega Podobnik",
+      "stage": "triage",
+      "created": "2026-07-06T11:16:10.352Z",
+      "lwd": "2026-08-16T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2919"
+    },
+    {
       "id": "ISS-2893",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4416,18 +4440,6 @@
       "created": "2026-02-13T10:15:35.27Z",
       "lwd": "2026-02-20T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-259138"
-    },
-    {
-      "id": "ISS-258769",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Admin Checklist: Office Setup for New Hire (Bharath Sharma)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2026-02-12T10:53:50.838Z",
-      "lwd": "2026-02-20T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-258769"
     },
     {
       "id": "TKT-44999",
