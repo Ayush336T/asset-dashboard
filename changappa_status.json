@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-08T04:29:13.584837+00:00",
+  "generated_at": "2026-07-08T07:09:27.622421+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 316
+      "count": 318
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2926",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Ilija Gavrilovic - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Ilija Gavrilovic",
+      "stage": "triage",
+      "created": "2026-07-08T05:59:59.827Z",
+      "lwd": "2026-07-09T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2926"
+    },
     {
       "id": "TKT-4446",
       "org": "peopleops",
@@ -2904,6 +2916,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2933",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Ilija Gavrilovic - Asset Collection",
+      "kind": "asset",
+      "employee": "Ilija Gavrilovic",
+      "stage": "triage",
+      "created": "2026-07-08T06:00:05.228Z",
+      "lwd": "2026-07-09T05:59:48.858Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2933"
     },
     {
       "id": "ISS-2919",
