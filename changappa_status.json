@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T11:57:30.071843+00:00",
+  "generated_at": "2026-07-09T15:29:59.675108+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 318
+      "count": 325
     },
     {
       "slug": "devrev",
@@ -13,6 +13,66 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2971",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Joakim Romero - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Joakim Romero",
+      "stage": "triage",
+      "created": "2026-07-09T14:50:46.805Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2971"
+    },
+    {
+      "id": "TKT-4465",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Request for B1/B2 Visa Approval",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-07-09T13:49:34.934Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4465"
+    },
+    {
+      "id": "ISS-2956",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shibu Nagendran - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Shibu Nagendran",
+      "stage": "triage",
+      "created": "2026-07-09T13:05:57.582Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2956"
+    },
+    {
+      "id": "ISS-2955",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shibu Nagendran - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Shibu Nagendran",
+      "stage": "triage",
+      "created": "2026-07-09T13:05:57.156Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2955"
+    },
+    {
+      "id": "ISS-2940",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shibu Nagendran - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Shibu Nagendran",
+      "stage": "triage",
+      "created": "2026-07-09T13:05:51.199Z",
+      "lwd": "2026-07-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2940"
+    },
     {
       "id": "ISS-2926",
       "org": "peopleops",
@@ -2916,6 +2976,30 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-2974",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Joakim Romero - Asset Collection",
+      "kind": "asset",
+      "employee": "Joakim Romero",
+      "stage": "triage",
+      "created": "2026-07-09T14:50:48.339Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2974"
+    },
+    {
+      "id": "ISS-2942",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shibu Nagendran - Asset Collection",
+      "kind": "asset",
+      "employee": "Shibu Nagendran",
+      "stage": "triage",
+      "created": "2026-07-09T13:05:53.996Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2942"
     },
     {
       "id": "ISS-2933",
