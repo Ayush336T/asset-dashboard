@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-10T06:14:12.561143+00:00",
+  "generated_at": "2026-07-10T09:56:10.499220+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 325
+      "count": 327
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-2989",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Suhas Phadtare - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Suhas Phadtare",
+      "stage": "triage",
+      "created": "2026-07-10T07:44:22.981Z",
+      "lwd": "2026-07-11T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2989"
+    },
     {
       "id": "ISS-2971",
       "org": "peopleops",
@@ -2976,6 +2988,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3007",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Suhas Phadtare - Asset Collection",
+      "kind": "asset",
+      "employee": "Suhas Phadtare",
+      "stage": "triage",
+      "created": "2026-07-10T07:44:29.625Z",
+      "lwd": "2026-07-11T07:44:12.103Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3007"
     },
     {
       "id": "ISS-2974",
