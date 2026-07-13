@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-13T04:49:46.359105+00:00",
+  "generated_at": "2026-07-13T08:01:23.985471+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 330
+      "count": 323
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 515
+      "count": 516
     }
   ],
   "tickets": [
@@ -3134,18 +3134,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2820"
     },
     {
-      "id": "ISS-2808",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Anirudh Jayakishan - Asset Collection",
-      "kind": "asset",
-      "employee": "Anirudh Jayakishan",
-      "stage": "triage",
-      "created": "2026-06-25T10:32:22.805Z",
-      "lwd": "2026-06-26T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2808"
-    },
-    {
       "id": "ISS-2788",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3242,18 +3230,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2664"
     },
     {
-      "id": "ISS-2642",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Sudhanshu Kumar - Asset Collection",
-      "kind": "asset",
-      "employee": "Sudhanshu Kumar",
-      "stage": "triage",
-      "created": "2026-06-18T16:44:47.135Z",
-      "lwd": "2026-06-30T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2642"
-    },
-    {
       "id": "ISS-2616",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3264,18 +3240,6 @@
       "created": "2026-06-17T14:37:00.682Z",
       "lwd": "2026-06-24T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2616"
-    },
-    {
-      "id": "ISS-2570",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Prakhar Agarwal - Asset Collection",
-      "kind": "asset",
-      "employee": "Prakhar Agarwal",
-      "stage": "triage",
-      "created": "2026-06-16T06:03:25.06Z",
-      "lwd": "2026-06-26T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2570"
     },
     {
       "id": "ISS-2552",
@@ -3290,18 +3254,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2552"
     },
     {
-      "id": "ISS-2520",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Abhinav Singh - Asset Collection",
-      "kind": "asset",
-      "employee": "Abhinav Singh",
-      "stage": "triage",
-      "created": "2026-06-12T09:35:45.319Z",
-      "lwd": "2026-06-30T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2520"
-    },
-    {
       "id": "ISS-2473",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3312,18 +3264,6 @@
       "created": "2026-06-12T05:14:36.18Z",
       "lwd": "2026-06-30T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2473"
-    },
-    {
-      "id": "ISS-2440",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Shubham Gandhi - Asset Collection",
-      "kind": "asset",
-      "employee": "Shubham Gandhi",
-      "stage": "triage",
-      "created": "2026-06-12T05:12:33.791Z",
-      "lwd": "2026-06-30T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2440"
     },
     {
       "id": "ISS-2422",
@@ -3386,18 +3326,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2327"
     },
     {
-      "id": "ISS-2310",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Jerusha Fernandes - Asset Collection",
-      "kind": "asset",
-      "employee": "Jerusha Fernandes",
-      "stage": "triage",
-      "created": "2026-06-05T16:16:21.694Z",
-      "lwd": "2026-06-30T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2310"
-    },
-    {
       "id": "ISS-2297",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3432,18 +3360,6 @@
       "created": "2026-06-01T19:13:47.703Z",
       "lwd": "2026-06-05T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2163"
-    },
-    {
-      "id": "ISS-2143",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Somil Jain - Asset Collection",
-      "kind": "asset",
-      "employee": "Somil Jain",
-      "stage": "triage",
-      "created": "2026-06-01T06:21:29.371Z",
-      "lwd": "2026-06-26T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2143"
     },
     {
       "id": "ISS-2087",
@@ -3972,6 +3888,18 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
+    },
+    {
+      "id": "ISS-342672",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Arjit Singh)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-07-13T05:21:27.624Z",
+      "lwd": "2026-07-19T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-342672"
     },
     {
       "id": "ISS-336683",
