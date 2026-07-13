@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-13T01:12:27.289990+00:00",
+  "generated_at": "2026-07-13T04:49:46.359105+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 327
+      "count": 330
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3002",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Suhas Phadtare - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Suhas Phadtare",
+      "stage": "triage",
+      "created": "2026-07-10T07:44:28.494Z",
+      "lwd": "2026-07-11T07:44:10.758Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3002"
+    },
     {
       "id": "ISS-2989",
       "org": "peopleops",
@@ -168,6 +180,18 @@
       "created": "2026-07-03T12:15:26.874Z",
       "lwd": "2026-07-21T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-2864"
+    },
+    {
+      "id": "ISS-2853",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Kunal Khadalia - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Kunal Khadalia",
+      "stage": "triage",
+      "created": "2026-06-30T07:51:32.599Z",
+      "lwd": "2026-07-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-2853"
     },
     {
       "id": "ISS-2835",
@@ -996,6 +1020,18 @@
       "created": "2026-05-27T06:02:13.339Z",
       "lwd": "2026-06-18T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-1986"
+    },
+    {
+      "id": "ISS-1974",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Prasad Kamath - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Prasad Kamath",
+      "stage": "triage",
+      "created": "2026-05-27T06:02:07.992Z",
+      "lwd": "2026-06-17T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-1974"
     },
     {
       "id": "ISS-1881",
