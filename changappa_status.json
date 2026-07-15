@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-15T10:25:08.292553+00:00",
+  "generated_at": "2026-07-15T12:01:28.089713+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 323
+      "count": 325
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3016",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Sathya Andavaraj - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Sathya Andavaraj",
+      "stage": "triage",
+      "created": "2026-07-15T11:31:43.877Z",
+      "lwd": "2026-08-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3016"
+    },
     {
       "id": "ISS-3002",
       "org": "peopleops",
@@ -3024,6 +3036,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3034",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Sathya Andavaraj - Asset Collection",
+      "kind": "asset",
+      "employee": "Sathya Andavaraj",
+      "stage": "triage",
+      "created": "2026-07-15T11:31:50.539Z",
+      "lwd": "2026-07-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3034"
     },
     {
       "id": "ISS-3007",
