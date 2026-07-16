@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16T09:25:06.770121+00:00",
+  "generated_at": "2026-07-16T11:18:54.590929+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 329
+      "count": 331
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3065",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vanja Stojanovic - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Vanja Stojanovic",
+      "stage": "triage",
+      "created": "2026-07-16T09:28:06.741Z",
+      "lwd": "2026-07-23T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3065"
+    },
     {
       "id": "ISS-3056",
       "org": "peopleops",
@@ -3072,6 +3084,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3078",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vanja Stojanovic - Asset Collection",
+      "kind": "asset",
+      "employee": "Vanja Stojanovic",
+      "stage": "triage",
+      "created": "2026-07-16T09:28:12.482Z",
+      "lwd": "2026-07-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3078"
     },
     {
       "id": "ISS-3058",
