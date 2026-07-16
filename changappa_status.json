@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T07:04:25.142099+00:00",
+  "generated_at": "2026-07-16T09:25:06.770121+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 517
+      "count": 514
     }
   ],
   "tickets": [
@@ -9626,30 +9626,6 @@
       "url": "https://app.devrev.ai/devrev/works/ISS-140392"
     },
     {
-      "id": "ISS-140390",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Add New Hire to Bangalore Office WhatsApp Group",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2025-01-12T00:00:31.219Z",
-      "lwd": "2025-01-13T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-140390"
-    },
-    {
-      "id": "ISS-140388",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Add Laptop Asset Details to Office Inventory",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2025-01-12T00:00:31.179Z",
-      "lwd": "2025-01-13T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-140388"
-    },
-    {
       "id": "ISS-140383",
       "org": "devrev",
       "org_label": "DevRev",
@@ -9744,18 +9720,6 @@
       "created": "2025-01-12T00:00:24.021Z",
       "lwd": "2025-01-13T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-140358"
-    },
-    {
-      "id": "ISS-140357",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Introduce New Hire to Team Members and Buddy",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2025-01-12T00:00:23.401Z",
-      "lwd": "2025-01-13T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-140357"
     },
     {
       "id": "ISS-139913",
