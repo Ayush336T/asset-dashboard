@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T19:03:34.264767+00:00",
+  "generated_at": "2026-07-17T20:13:57.038323+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 333
+      "count": 335
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3105",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Mark Czarnecki - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Mark Czarnecki",
+      "stage": "triage",
+      "created": "2026-07-17T20:01:53.752Z",
+      "lwd": "2026-07-25T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3105"
+    },
     {
       "id": "ISS-3084",
       "org": "peopleops",
@@ -3096,6 +3108,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3109",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Mark Czarnecki - Asset Collection",
+      "kind": "asset",
+      "employee": "Mark Czarnecki",
+      "stage": "triage",
+      "created": "2026-07-17T20:01:55.371Z",
+      "lwd": "2026-07-24T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3109"
     },
     {
       "id": "ISS-3087",
