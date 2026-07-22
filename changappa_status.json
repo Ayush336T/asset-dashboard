@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-22T15:02:22.543950+00:00",
+  "generated_at": "2026-07-22T16:41:25.107244+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 339
+      "count": 341
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3173",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Gaurish Lawande - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Gaurish Lawande",
+      "stage": "triage",
+      "created": "2026-07-22T15:52:09.01Z",
+      "lwd": "2026-10-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3173"
+    },
     {
       "id": "ISS-3149",
       "org": "peopleops",
@@ -3132,6 +3144,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3190",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Gaurish Lawande - Asset Collection",
+      "kind": "asset",
+      "employee": "Gaurish Lawande",
+      "stage": "triage",
+      "created": "2026-07-22T15:52:16.253Z",
+      "lwd": "2026-09-30T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3190"
     },
     {
       "id": "ISS-3163",
