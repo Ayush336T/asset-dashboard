@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-23T04:43:10.351598+00:00",
+  "generated_at": "2026-07-23T07:23:32.798743+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 341
+      "count": 342
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4520",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Request for VISA Approval",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-07-23T06:52:59.276Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4520"
+    },
     {
       "id": "ISS-3173",
       "org": "peopleops",
