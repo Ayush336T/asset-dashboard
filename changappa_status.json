@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-23T07:23:32.798743+00:00",
+  "generated_at": "2026-07-23T09:57:04.897529+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 342
+      "count": 346
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3214",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Devendra Gurnani - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Devendra Gurnani",
+      "stage": "triage",
+      "created": "2026-07-23T09:31:39.239Z",
+      "lwd": "2026-07-25T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3214"
+    },
+    {
+      "id": "ISS-3212",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Devendra Gurnani - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Devendra Gurnani",
+      "stage": "triage",
+      "created": "2026-07-23T09:31:39.054Z",
+      "lwd": "2026-07-24T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3212"
+    },
+    {
+      "id": "ISS-3206",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Devendra Gurnani - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Devendra Gurnani",
+      "stage": "triage",
+      "created": "2026-07-23T09:31:37.379Z",
+      "lwd": "2026-07-25T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3206"
+    },
     {
       "id": "TKT-4520",
       "org": "peopleops",
@@ -3156,6 +3192,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3219",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Devendra Gurnani - Asset Collection",
+      "kind": "asset",
+      "employee": "Devendra Gurnani",
+      "stage": "triage",
+      "created": "2026-07-23T09:31:41.133Z",
+      "lwd": "2026-07-24T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3219"
     },
     {
       "id": "ISS-3190",
