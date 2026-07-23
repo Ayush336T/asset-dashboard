@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-23T09:57:04.897529+00:00",
+  "generated_at": "2026-07-23T11:56:45.856395+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 346
+      "count": 350
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3238",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Amogh Bindal - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Amogh Bindal",
+      "stage": "triage",
+      "created": "2026-07-23T10:30:51.335Z",
+      "lwd": "2026-07-25T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3238"
+    },
+    {
+      "id": "ISS-3231",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Amogh Bindal - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Amogh Bindal",
+      "stage": "triage",
+      "created": "2026-07-23T10:30:47.877Z",
+      "lwd": "2026-07-25T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3231"
+    },
+    {
+      "id": "ISS-3229",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Amogh Bindal - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Amogh Bindal",
+      "stage": "triage",
+      "created": "2026-07-23T10:30:47.741Z",
+      "lwd": "2026-07-24T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3229"
+    },
     {
       "id": "ISS-3214",
       "org": "peopleops",
@@ -56,7 +92,7 @@
       "title": "Request for VISA Approval",
       "kind": "other",
       "employee": "",
-      "stage": "queued",
+      "stage": "work_in_progress",
       "created": "2026-07-23T06:52:59.276Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-4520"
@@ -3192,6 +3228,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3239",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Amogh Bindal - Asset Collection",
+      "kind": "asset",
+      "employee": "Amogh Bindal",
+      "stage": "triage",
+      "created": "2026-07-23T10:30:51.834Z",
+      "lwd": "2026-07-24T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3239"
     },
     {
       "id": "ISS-3219",
