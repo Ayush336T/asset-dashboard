@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T04:28:50.976109+00:00",
+  "generated_at": "2026-07-24T07:12:38.789091+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 513
+      "count": 512
     }
   ],
   "tickets": [
@@ -4260,18 +4260,6 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
-    },
-    {
-      "id": "ISS-346533",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Admin Checklist: Office Setup for New Hire (Manav agarwal)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2026-07-15T00:00:14.362Z",
-      "lwd": "2026-08-07T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-346533"
     },
     {
       "id": "ISS-336683",
