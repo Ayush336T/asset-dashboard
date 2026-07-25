@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T12:46:57.249023+00:00",
+  "generated_at": "2026-07-25T14:23:04.121684+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 512
+      "count": 513
     }
   ],
   "tickets": [
@@ -4260,6 +4260,18 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
+    },
+    {
+      "id": "ISS-350295",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Atharva Gilbile)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-07-25T13:56:52.213Z",
+      "lwd": "2026-07-31T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-350295"
     },
     {
       "id": "ISS-336683",
