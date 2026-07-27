@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-27T18:47:08.813822+00:00",
+  "generated_at": "2026-07-27T20:11:42.275909+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 349
+      "count": 351
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3303",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Joaquin Vallve - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Joaquin Vallve",
+      "stage": "triage",
+      "created": "2026-07-27T18:57:00.944Z",
+      "lwd": "2026-08-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3303"
+    },
     {
       "id": "TKT-4542",
       "org": "peopleops",
@@ -3264,6 +3276,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3296",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Joaquin Vallve - Asset Collection",
+      "kind": "asset",
+      "employee": "Joaquin Vallve",
+      "stage": "triage",
+      "created": "2026-07-27T18:56:59.205Z",
+      "lwd": "2026-07-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3296"
     },
     {
       "id": "ISS-3278",
