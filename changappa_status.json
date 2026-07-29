@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T23:45:42.567458+00:00",
+  "generated_at": "2026-07-29T01:13:16.215098+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 513
+      "count": 516
     }
   ],
   "tickets": [
@@ -4224,6 +4224,42 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
+    },
+    {
+      "id": "ISS-351512",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Himalaya Jhala)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-07-29T00:00:22.259Z",
+      "lwd": "2026-08-07T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-351512"
+    },
+    {
+      "id": "ISS-351508",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Aditya Mishra)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-07-29T00:00:20.175Z",
+      "lwd": "2026-08-07T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-351508"
+    },
+    {
+      "id": "ISS-351498",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Tarun Kumar Rajput)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-07-29T00:00:07.538Z",
+      "lwd": "2026-08-07T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-351498"
     },
     {
       "id": "ISS-350295",
