@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-30T09:07:08.735929+00:00",
+  "generated_at": "2026-07-30T11:20:59.033372+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 354
+      "count": 358
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3350",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vishwajith Upadhyaya K - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Vishwajith Upadhyaya K",
+      "stage": "triage",
+      "created": "2026-07-30T09:08:44.179Z",
+      "lwd": "2026-08-15T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3350"
+    },
+    {
+      "id": "ISS-3339",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vishwajith Upadhyaya K - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Vishwajith Upadhyaya K",
+      "stage": "triage",
+      "created": "2026-07-30T09:08:38.856Z",
+      "lwd": "2026-08-14T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3339"
+    },
+    {
+      "id": "ISS-3337",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vishwajith Upadhyaya K - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Vishwajith Upadhyaya K",
+      "stage": "triage",
+      "created": "2026-07-30T09:08:38.308Z",
+      "lwd": "2026-08-15T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3337"
+    },
     {
       "id": "TKT-4564",
       "org": "peopleops",
@@ -3300,6 +3336,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3348",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vishwajith Upadhyaya K - Asset Collection",
+      "kind": "asset",
+      "employee": "Vishwajith Upadhyaya K",
+      "stage": "triage",
+      "created": "2026-07-30T09:08:43.858Z",
+      "lwd": "2026-08-14T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3348"
     },
     {
       "id": "ISS-3321",
