@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-30T13:01:34.229050+00:00",
+  "generated_at": "2026-07-30T15:20:46.184401+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 358
+      "count": 360
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3360",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Federico Rojas - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Federico Rojas",
+      "stage": "triage",
+      "created": "2026-07-30T13:09:14.861Z",
+      "lwd": "2026-08-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3360"
+    },
     {
       "id": "ISS-3350",
       "org": "peopleops",
@@ -3336,6 +3348,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3368",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Federico Rojas - Asset Collection",
+      "kind": "asset",
+      "employee": "Federico Rojas",
+      "stage": "triage",
+      "created": "2026-07-30T13:09:17.231Z",
+      "lwd": "2026-07-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3368"
     },
     {
       "id": "ISS-3348",
