@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T23:38:15.181375+00:00",
+  "generated_at": "2026-07-31T01:13:57.566610+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -4376,7 +4376,7 @@
       "title": "Admin Checklist: Office Setup for New Hire (Atharva Gilbile)",
       "kind": "other",
       "employee": "",
-      "stage": "Incomplete",
+      "stage": "Overdue",
       "created": "2026-07-25T13:56:52.213Z",
       "lwd": "2026-07-31T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-350295"
