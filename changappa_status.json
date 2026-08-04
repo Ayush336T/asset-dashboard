@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T08:06:45.708455+00:00",
+  "generated_at": "2026-08-04T10:49:31.043098+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 516
+      "count": 517
     }
   ],
   "tickets": [
@@ -4452,6 +4452,18 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
+    },
+    {
+      "id": "ISS-355485",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Tshirt for Sales QBR",
+      "kind": "other",
+      "employee": "",
+      "stage": "triage",
+      "created": "2026-08-04T08:22:52.089Z",
+      "lwd": "2026-08-05T18:30:00.123Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-355485"
     },
     {
       "id": "ISS-351512",
