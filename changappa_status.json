@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-05T18:13:19.062550+00:00",
+  "generated_at": "2026-08-05T19:58:45.522465+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 374
+      "count": 361
     },
     {
       "slug": "devrev",
@@ -3446,18 +3446,6 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
-      "id": "ISS-3510",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Serena Maldonado - Asset Collection",
-      "kind": "asset",
-      "employee": "Serena Maldonado",
-      "stage": "triage",
-      "created": "2026-08-05T17:26:38.326Z",
-      "lwd": "2026-08-06T17:26:22.383Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3510"
-    },
-    {
       "id": "ISS-3485",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3476,7 +3464,7 @@
       "title": "Employee Name: Martijn Bosschaart - Asset Collection",
       "kind": "asset",
       "employee": "Martijn Bosschaart",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-04T08:01:56.124Z",
       "lwd": "2026-09-30T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3453"
@@ -3512,7 +3500,7 @@
       "title": "Employee Name: Negin Almohammadi - Asset Collection",
       "kind": "asset",
       "employee": "Negin Almohammadi",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-07-31T05:33:15.608Z",
       "lwd": "2026-08-31T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3385"
@@ -3524,7 +3512,7 @@
       "title": "Employee Name: Federico Rojas - Asset Collection",
       "kind": "asset",
       "employee": "Federico Rojas",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-07-30T13:09:17.231Z",
       "lwd": "2026-07-31T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3368"
@@ -3560,7 +3548,7 @@
       "title": "Employee Name: Joaquin Vallve - Asset Collection",
       "kind": "asset",
       "employee": "Joaquin Vallve",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-07-27T18:56:59.205Z",
       "lwd": "2026-07-31T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3296"
@@ -3576,18 +3564,6 @@
       "created": "2026-07-23T19:51:07.403Z",
       "lwd": "2026-07-28T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3278"
-    },
-    {
-      "id": "ISS-3259",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Agustin Maldonado - Asset Collection",
-      "kind": "asset",
-      "employee": "Agustin Maldonado",
-      "stage": "triage",
-      "created": "2026-07-23T19:50:10.673Z",
-      "lwd": "2026-08-03T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3259"
     },
     {
       "id": "ISS-3219",
@@ -3638,18 +3614,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-3136"
     },
     {
-      "id": "ISS-3109",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Mark Czarnecki - Asset Collection",
-      "kind": "asset",
-      "employee": "Mark Czarnecki",
-      "stage": "In Progress",
-      "created": "2026-07-17T20:01:55.371Z",
-      "lwd": "2026-07-24T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3109"
-    },
-    {
       "id": "ISS-3087",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3686,18 +3650,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-3058"
     },
     {
-      "id": "ISS-3034",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Sathya Andavaraj - Asset Collection",
-      "kind": "asset",
-      "employee": "Sathya Andavaraj",
-      "stage": "triage",
-      "created": "2026-07-15T11:31:50.539Z",
-      "lwd": "2026-07-31T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3034"
-    },
-    {
       "id": "ISS-3007",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -3708,18 +3660,6 @@
       "created": "2026-07-10T07:44:29.625Z",
       "lwd": "2026-07-11T07:44:12.103Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3007"
-    },
-    {
-      "id": "ISS-2974",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Joakim Romero - Asset Collection",
-      "kind": "asset",
-      "employee": "Joakim Romero",
-      "stage": "triage",
-      "created": "2026-07-09T14:50:48.339Z",
-      "lwd": "2026-07-17T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2974"
     },
     {
       "id": "ISS-2933",
@@ -3986,30 +3926,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-2163"
     },
     {
-      "id": "ISS-2087",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Janet Navarrette - Asset Collection",
-      "kind": "asset",
-      "employee": "Janet Navarrette",
-      "stage": "triage",
-      "created": "2026-05-29T21:00:24.472Z",
-      "lwd": "2026-05-30T21:00:08.85Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2087"
-    },
-    {
-      "id": "ISS-2025",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Ava Zarkesh - Asset Collection",
-      "kind": "asset",
-      "employee": "Ava Zarkesh",
-      "stage": "triage",
-      "created": "2026-05-28T05:54:09.758Z",
-      "lwd": "2026-05-31T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-2025"
-    },
-    {
       "id": "ISS-1961",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4022,30 +3938,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-1961"
     },
     {
-      "id": "ISS-1943",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Nick Konen - Asset Collection",
-      "kind": "asset",
-      "employee": "Nick Konen",
-      "stage": "triage",
-      "created": "2026-05-21T16:22:03.545Z",
-      "lwd": "2026-05-22T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-1943"
-    },
-    {
-      "id": "ISS-1927",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Siddharth Srinivasan - Asset Collection",
-      "kind": "asset",
-      "employee": "Siddharth Srinivasan",
-      "stage": "triage",
-      "created": "2026-05-20T04:00:47.061Z",
-      "lwd": "2026-05-21T04:00:31.57Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-1927"
-    },
-    {
       "id": "ISS-1916",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4056,30 +3948,6 @@
       "created": "2026-05-18T08:16:40.365Z",
       "lwd": "2026-06-03T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-1916"
-    },
-    {
-      "id": "ISS-1897",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Jerry Ming - Asset Collection",
-      "kind": "asset",
-      "employee": "Jerry Ming",
-      "stage": "triage",
-      "created": "2026-05-13T08:26:44.989Z",
-      "lwd": "2026-05-15T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-1897"
-    },
-    {
-      "id": "ISS-1874",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Paul Wise - Asset Collection",
-      "kind": "asset",
-      "employee": "Paul Wise",
-      "stage": "triage",
-      "created": "2026-05-08T17:55:19.345Z",
-      "lwd": "2026-05-09T17:55:02.359Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-1874"
     },
     {
       "id": "ISS-1839",
@@ -4106,18 +3974,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-1756"
     },
     {
-      "id": "ISS-1735",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Brandon Grabowski - Asset Collection",
-      "kind": "asset",
-      "employee": "Brandon Grabowski",
-      "stage": "triage",
-      "created": "2026-04-27T10:22:29.857Z",
-      "lwd": "2026-04-28T10:22:12.896Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-1735"
-    },
-    {
       "id": "ISS-1679",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4128,18 +3984,6 @@
       "created": "2026-04-23T18:13:37.573Z",
       "lwd": "2026-05-15T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-1679"
-    },
-    {
-      "id": "ISS-1635",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Shruthi Racha - Asset Collection",
-      "kind": "asset",
-      "employee": "Shruthi Racha",
-      "stage": "triage",
-      "created": "2026-04-22T20:05:58.192Z",
-      "lwd": "2026-04-26T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-1635"
     },
     {
       "id": "ISS-1610",
