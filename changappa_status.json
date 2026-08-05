@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-05T16:48:16.491232+00:00",
+  "generated_at": "2026-08-05T18:13:19.062550+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 372
+      "count": 374
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3505",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Serena Maldonado - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Serena Maldonado",
+      "stage": "triage",
+      "created": "2026-08-05T17:26:37.214Z",
+      "lwd": "2026-08-06T17:26:21.413Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3505"
+    },
     {
       "id": "ISS-3489",
       "org": "peopleops",
@@ -3432,6 +3444,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3510",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Serena Maldonado - Asset Collection",
+      "kind": "asset",
+      "employee": "Serena Maldonado",
+      "stage": "triage",
+      "created": "2026-08-05T17:26:38.326Z",
+      "lwd": "2026-08-06T17:26:22.383Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3510"
     },
     {
       "id": "ISS-3485",
