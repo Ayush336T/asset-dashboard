@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T12:15:34.282307+00:00",
+  "generated_at": "2026-08-06T14:40:13.550734+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -20,7 +20,7 @@
       "title": "Travel to Slovenia and Netherlands for Netive Go live",
       "kind": "other",
       "employee": "",
-      "stage": "queued",
+      "stage": "work_in_progress",
       "created": "2026-08-06T07:55:39.702Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-4603"
