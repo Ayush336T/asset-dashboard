@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-06T07:16:54.097183+00:00",
+  "generated_at": "2026-08-06T10:04:13.242991+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 363
+      "count": 364
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4603",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Travel to Slovenia and Netherlands for Netive Go live",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-08-06T07:55:39.702Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4603"
+    },
     {
       "id": "ISS-3533",
       "org": "peopleops",
