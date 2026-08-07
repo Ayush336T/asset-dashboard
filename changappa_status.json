@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T12:00:15.611825+00:00",
+  "generated_at": "2026-08-07T13:24:37.054258+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -20,7 +20,7 @@
       "title": "Netherlands travel: TCC Go-Live + Independer visit with AAI team",
       "kind": "other",
       "employee": "",
-      "stage": "queued",
+      "stage": "work_in_progress",
       "created": "2026-08-07T11:15:58.27Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-4608"
