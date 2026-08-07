@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T05:11:30.096344+00:00",
+  "generated_at": "2026-08-07T06:34:05.048870+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 517
+      "count": 516
     }
   ],
   "tickets": [
@@ -4896,18 +4896,6 @@
       "created": "2026-03-06T07:35:00.443Z",
       "lwd": null,
       "url": "https://app.devrev.ai/devrev/works/TKT-47751"
-    },
-    {
-      "id": "ISS-266972",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Admin Checklist: Office Setup for New Hire (Velide Sri Manaswini)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2026-03-05T11:37:40.888Z",
-      "lwd": "2026-03-13T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-266972"
     },
     {
       "id": "ISS-266362",
