@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-07T21:12:20.820935+00:00",
+  "generated_at": "2026-08-07T21:58:09.724512+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 372
+      "count": 371
     },
     {
       "slug": "devrev",
@@ -3540,18 +3540,6 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
-    },
-    {
-      "id": "ISS-3599",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Matt Gilbert - Asset Collection",
-      "kind": "asset",
-      "employee": "Matt Gilbert",
-      "stage": "triage",
-      "created": "2026-08-07T15:18:54.654Z",
-      "lwd": "2026-08-08T15:18:36.672Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3599"
     },
     {
       "id": "ISS-3573",
