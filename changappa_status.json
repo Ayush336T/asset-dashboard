@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-07T11:12:05.776435+00:00",
+  "generated_at": "2026-08-07T12:00:15.611825+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 367
+      "count": 368
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4608",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Netherlands travel: TCC Go-Live + Independer visit with AAI team",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-08-07T11:15:58.27Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4608"
+    },
     {
       "id": "TKT-4607",
       "org": "peopleops",
