@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T09:49:59.187352+00:00",
+  "generated_at": "2026-08-10T11:12:31.974620+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 517
+      "count": 516
     }
   ],
   "tickets": [
@@ -4464,18 +4464,6 @@
       "created": "2026-01-16T07:25:54.672Z",
       "lwd": "2026-01-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-66"
-    },
-    {
-      "id": "ISS-358605",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Admin Checklist: Office Setup for New Hire (Siddarth Singh)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2026-08-07T15:48:49.623Z",
-      "lwd": "2026-08-11T00:00:00Z",
-      "url": "https://app.devrev.ai/devrev/works/ISS-358605"
     },
     {
       "id": "ISS-355485",
