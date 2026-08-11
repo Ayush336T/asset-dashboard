@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-11T07:57:45.882093+00:00",
+  "generated_at": "2026-08-11T09:10:01.380891+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 372
+      "count": 374
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3610",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Gayathri Balasubramanian - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Gayathri Balasubramanian",
+      "stage": "triage",
+      "created": "2026-08-11T08:30:16.5Z",
+      "lwd": "2026-08-13T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3610"
+    },
     {
       "id": "TKT-4625",
       "org": "peopleops",
@@ -3552,6 +3564,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3616",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Gayathri Balasubramanian - Asset Collection",
+      "kind": "asset",
+      "employee": "Gayathri Balasubramanian",
+      "stage": "triage",
+      "created": "2026-08-11T08:30:18.009Z",
+      "lwd": "2026-08-12T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3616"
     },
     {
       "id": "ISS-3573",
