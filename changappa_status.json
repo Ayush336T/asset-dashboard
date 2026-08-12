@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-12T03:14:50.064014+00:00",
+  "generated_at": "2026-08-12T05:09:57.122475+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 374
+      "count": 373
     },
     {
       "slug": "devrev",
@@ -3576,18 +3576,6 @@
       "created": "2026-08-11T08:30:18.009Z",
       "lwd": "2026-08-12T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3616"
-    },
-    {
-      "id": "ISS-3573",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Will Rial - Asset Collection",
-      "kind": "asset",
-      "employee": "Will Rial",
-      "stage": "triage",
-      "created": "2026-08-07T14:58:46.293Z",
-      "lwd": "2026-08-08T14:58:28.516Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3573"
     },
     {
       "id": "ISS-3537",
