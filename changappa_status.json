@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-12T17:32:59.326495+00:00",
+  "generated_at": "2026-08-12T18:38:28.371099+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 381
+      "count": 383
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3694",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Zayem Alam - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Zayem Alam",
+      "stage": "triage",
+      "created": "2026-08-12T18:05:08.662Z",
+      "lwd": "2026-08-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3694"
+    },
     {
       "id": "ISS-3680",
       "org": "peopleops",
@@ -3624,6 +3636,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3700",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Zayem Alam - Asset Collection",
+      "kind": "asset",
+      "employee": "Zayem Alam",
+      "stage": "triage",
+      "created": "2026-08-12T18:05:12.347Z",
+      "lwd": "2026-08-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3700"
     },
     {
       "id": "ISS-3681",
