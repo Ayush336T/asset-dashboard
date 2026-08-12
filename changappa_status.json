@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-12T12:33:30.899905+00:00",
+  "generated_at": "2026-08-12T14:07:31.242732+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 374
+      "count": 382
     },
     {
       "slug": "devrev",
@@ -13,6 +13,54 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3680",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Nithilan Karthik - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Nithilan Karthik",
+      "stage": "triage",
+      "created": "2026-08-12T12:57:11.201Z",
+      "lwd": "2026-08-16T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3680"
+    },
+    {
+      "id": "ISS-3662",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Ishaan Kansal - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Ishaan Kansal",
+      "stage": "triage",
+      "created": "2026-08-12T12:51:58.551Z",
+      "lwd": "2026-08-16T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3662"
+    },
+    {
+      "id": "ISS-3650",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Raymond Feng - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Raymond Feng",
+      "stage": "triage",
+      "created": "2026-08-12T12:46:20.93Z",
+      "lwd": "2026-08-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3650"
+    },
+    {
+      "id": "ISS-3636",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Amina Boubezari - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Amina Boubezari",
+      "stage": "triage",
+      "created": "2026-08-12T12:43:38.052Z",
+      "lwd": "2026-08-13T12:43:25.309Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3636"
+    },
     {
       "id": "TKT-4631",
       "org": "peopleops",
@@ -3576,6 +3624,54 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3681",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Nithilan Karthik - Asset Collection",
+      "kind": "asset",
+      "employee": "Nithilan Karthik",
+      "stage": "triage",
+      "created": "2026-08-12T12:57:11.616Z",
+      "lwd": "2026-08-15T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3681"
+    },
+    {
+      "id": "ISS-3670",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Ishaan Kansal - Asset Collection",
+      "kind": "asset",
+      "employee": "Ishaan Kansal",
+      "stage": "triage",
+      "created": "2026-08-12T12:52:00.429Z",
+      "lwd": "2026-08-15T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3670"
+    },
+    {
+      "id": "ISS-3656",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Raymond Feng - Asset Collection",
+      "kind": "asset",
+      "employee": "Raymond Feng",
+      "stage": "triage",
+      "created": "2026-08-12T12:46:22.736Z",
+      "lwd": "2026-08-20T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3656"
+    },
+    {
+      "id": "ISS-3637",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Amina Boubezari - Asset Collection",
+      "kind": "asset",
+      "employee": "Amina Boubezari",
+      "stage": "triage",
+      "created": "2026-08-12T12:43:40.35Z",
+      "lwd": "2026-08-13T12:43:26.633Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3637"
     },
     {
       "id": "ISS-3616",
