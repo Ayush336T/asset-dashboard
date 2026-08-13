@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-13T08:02:15.389994+00:00",
+  "generated_at": "2026-08-13T09:34:23.218466+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 390
+      "count": 392
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3768",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shina Eron - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Shina Eron",
+      "stage": "triage",
+      "created": "2026-08-13T08:20:23.829Z",
+      "lwd": "2026-08-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3768"
+    },
     {
       "id": "ISS-3741",
       "org": "peopleops",
@@ -3696,6 +3708,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3772",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shina Eron - Asset Collection",
+      "kind": "asset",
+      "employee": "Shina Eron",
+      "stage": "triage",
+      "created": "2026-08-13T08:20:27.429Z",
+      "lwd": "2026-08-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3772"
     },
     {
       "id": "ISS-3749",
