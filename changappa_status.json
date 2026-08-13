@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-13T06:19:53.063966+00:00",
+  "generated_at": "2026-08-13T08:02:15.389994+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 386
+      "count": 390
     },
     {
       "slug": "devrev",
@@ -13,6 +13,30 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3741",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Brenna Morgan - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Brenna Morgan",
+      "stage": "triage",
+      "created": "2026-08-13T07:29:00.667Z",
+      "lwd": "2026-08-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3741"
+    },
+    {
+      "id": "ISS-3725",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Dhruv Jindal - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Dhruv Jindal",
+      "stage": "triage",
+      "created": "2026-08-13T06:24:06.782Z",
+      "lwd": "2026-08-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3725"
+    },
     {
       "id": "ISS-3712",
       "org": "peopleops",
@@ -3672,6 +3696,30 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3749",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Brenna Morgan - Asset Collection",
+      "kind": "asset",
+      "employee": "Brenna Morgan",
+      "stage": "triage",
+      "created": "2026-08-13T07:29:05.616Z",
+      "lwd": "2026-08-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3749"
+    },
+    {
+      "id": "ISS-3736",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Dhruv Jindal - Asset Collection",
+      "kind": "asset",
+      "employee": "Dhruv Jindal",
+      "stage": "triage",
+      "created": "2026-08-13T06:24:11.494Z",
+      "lwd": "2026-08-20T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3736"
     },
     {
       "id": "ISS-3718",
