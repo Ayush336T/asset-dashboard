@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-14T16:58:49.939792+00:00",
+  "generated_at": "2026-08-14T17:58:44.271787+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 394
+      "count": 396
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3801",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Nahuel Alan Grimaudo - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Nahuel Alan Grimaudo",
+      "stage": "triage",
+      "created": "2026-08-14T17:27:02.39Z",
+      "lwd": "2026-09-02T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3801"
+    },
     {
       "id": "ISS-3781",
       "org": "peopleops",
@@ -3720,6 +3732,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3811",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Nahuel Alan Grimaudo - Asset Collection",
+      "kind": "asset",
+      "employee": "Nahuel Alan Grimaudo",
+      "stage": "triage",
+      "created": "2026-08-14T17:27:06.332Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3811"
     },
     {
       "id": "ISS-3792",
