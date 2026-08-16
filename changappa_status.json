@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-16T17:35:10.001205+00:00",
+  "generated_at": "2026-08-16T17:57:27.289489+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 396
+      "count": 400
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3834",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Malyadip Pal - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Malyadip Pal",
+      "stage": "triage",
+      "created": "2026-08-16T17:52:25.416Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3834"
+    },
+    {
+      "id": "ISS-3823",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Malyadip Pal - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Malyadip Pal",
+      "stage": "triage",
+      "created": "2026-08-16T17:52:19.848Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3823"
+    },
+    {
+      "id": "ISS-3821",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Malyadip Pal - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Malyadip Pal",
+      "stage": "triage",
+      "created": "2026-08-16T17:52:19.738Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3821"
+    },
     {
       "id": "ISS-3801",
       "org": "peopleops",
@@ -3732,6 +3768,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3832",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Malyadip Pal - Asset Collection",
+      "kind": "asset",
+      "employee": "Malyadip Pal",
+      "stage": "triage",
+      "created": "2026-08-16T17:52:25Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3832"
     },
     {
       "id": "ISS-3811",
