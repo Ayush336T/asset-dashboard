@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-17T04:27:03.039132+00:00",
+  "generated_at": "2026-08-17T05:11:00.642233+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 400
+      "count": 404
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3843",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Garv Jain - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Garv Jain",
+      "stage": "triage",
+      "created": "2026-08-17T04:50:24.348Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3843"
+    },
+    {
+      "id": "ISS-3839",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Garv Jain - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Garv Jain",
+      "stage": "triage",
+      "created": "2026-08-17T04:50:22.402Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3839"
+    },
+    {
+      "id": "ISS-3838",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Garv Jain - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Garv Jain",
+      "stage": "triage",
+      "created": "2026-08-17T04:50:21.777Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3838"
+    },
     {
       "id": "ISS-3834",
       "org": "peopleops",
@@ -3768,6 +3804,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3845",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Garv Jain - Asset Collection",
+      "kind": "asset",
+      "employee": "Garv Jain",
+      "stage": "triage",
+      "created": "2026-08-17T04:50:25.286Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3845"
     },
     {
       "id": "ISS-3832",
