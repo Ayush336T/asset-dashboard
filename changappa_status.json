@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-18T09:49:35.510847+00:00",
+  "generated_at": "2026-08-18T10:32:09.354341+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 412
+      "count": 415
     },
     {
       "slug": "devrev",
@@ -13,6 +13,30 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3930",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Dhruv Jindal - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Dhruv Jindal",
+      "stage": "triage",
+      "created": "2026-08-18T10:01:01.479Z",
+      "lwd": "2026-08-29T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3930"
+    },
+    {
+      "id": "ISS-3913",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Justin Ye - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Justin Ye",
+      "stage": "triage",
+      "created": "2026-08-18T09:58:51.657Z",
+      "lwd": "2026-08-29T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3913"
+    },
     {
       "id": "ISS-3900",
       "org": "peopleops",
@@ -3866,6 +3890,30 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-3935",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Dhruv Jindal - Asset Collection",
+      "kind": "asset",
+      "employee": "Dhruv Jindal",
+      "stage": "triage",
+      "created": "2026-08-18T10:01:03.343Z",
+      "lwd": "2026-08-28T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3935"
+    },
+    {
+      "id": "ISS-3923",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Justin Ye - Asset Collection",
+      "kind": "asset",
+      "employee": "Justin Ye",
+      "stage": "triage",
+      "created": "2026-08-18T09:58:56.897Z",
+      "lwd": "2026-08-28T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3923"
+    },
+    {
       "id": "ISS-3909",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4944,18 +4992,6 @@
       "created": "2026-01-23T02:43:54.526Z",
       "lwd": "2026-01-24T02:43:38.428Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-142"
-    },
-    {
-      "id": "ISS-66",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Aamir Massoud - Asset Collection",
-      "kind": "asset",
-      "employee": "Aamir Massoud",
-      "stage": "triage",
-      "created": "2026-01-16T07:25:54.672Z",
-      "lwd": "2026-01-20T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-66"
     },
     {
       "id": "ISS-355485",
