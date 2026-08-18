@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-18T13:58:14.557485+00:00",
+  "generated_at": "2026-08-18T14:42:52.113068+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 415
+      "count": 413
     },
     {
       "slug": "devrev",
@@ -3992,7 +3992,7 @@
       "title": "Employee Name: Shabari S Nair - Asset Collection",
       "kind": "asset",
       "employee": "Shabari S Nair",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-13T11:13:21.09Z",
       "lwd": "2026-08-21T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3792"
@@ -4004,7 +4004,7 @@
       "title": "Employee Name: Shina Eron - Asset Collection",
       "kind": "asset",
       "employee": "Shina Eron",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-13T08:20:27.429Z",
       "lwd": "2026-08-21T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3772"
@@ -4016,7 +4016,7 @@
       "title": "Employee Name: Brenna Morgan - Asset Collection",
       "kind": "asset",
       "employee": "Brenna Morgan",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-13T07:29:05.616Z",
       "lwd": "2026-08-21T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3749"
@@ -4028,7 +4028,7 @@
       "title": "Employee Name: Dhruv Jindal - Asset Collection",
       "kind": "asset",
       "employee": "Dhruv Jindal",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-13T06:24:11.494Z",
       "lwd": "2026-08-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3736"
@@ -4052,7 +4052,7 @@
       "title": "Employee Name: Zayem Alam - Asset Collection",
       "kind": "asset",
       "employee": "Zayem Alam",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-12T18:05:12.347Z",
       "lwd": "2026-08-21T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3700"
@@ -4064,7 +4064,7 @@
       "title": "Employee Name: Nithilan Karthik - Asset Collection",
       "kind": "asset",
       "employee": "Nithilan Karthik",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-12T12:57:11.616Z",
       "lwd": "2026-08-15T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3681"
@@ -4076,34 +4076,10 @@
       "title": "Employee Name: Raymond Feng - Asset Collection",
       "kind": "asset",
       "employee": "Raymond Feng",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-12T12:46:22.736Z",
       "lwd": "2026-08-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3656"
-    },
-    {
-      "id": "ISS-3637",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Amina Boubezari - Asset Collection",
-      "kind": "asset",
-      "employee": "Amina Boubezari",
-      "stage": "triage",
-      "created": "2026-08-12T12:43:40.35Z",
-      "lwd": "2026-08-13T12:43:26.633Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3637"
-    },
-    {
-      "id": "ISS-3537",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Timothy Trovillion - Asset Collection",
-      "kind": "asset",
-      "employee": "Timothy Trovillion",
-      "stage": "triage",
-      "created": "2026-08-05T21:05:09.256Z",
-      "lwd": "2026-08-06T21:04:52.836Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3537"
     },
     {
       "id": "ISS-3485",
