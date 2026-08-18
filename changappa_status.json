@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T13:09:29.623399+00:00",
+  "generated_at": "2026-08-18T13:58:14.557485+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -3896,7 +3896,7 @@
       "title": "Employee Name: Dhruv Jindal - Asset Collection",
       "kind": "asset",
       "employee": "Dhruv Jindal",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-18T10:01:03.343Z",
       "lwd": "2026-08-28T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3935"
@@ -3908,7 +3908,7 @@
       "title": "Employee Name: Justin Ye - Asset Collection",
       "kind": "asset",
       "employee": "Justin Ye",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-18T09:58:56.897Z",
       "lwd": "2026-08-28T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3923"
@@ -3944,7 +3944,7 @@
       "title": "Employee Name: Ayaan Gupta - Asset Collection",
       "kind": "asset",
       "employee": "Ayaan Gupta",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-17T06:48:42.286Z",
       "lwd": "2026-08-31T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3861"
