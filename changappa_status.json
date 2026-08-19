@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-08-19T11:03:30.667344+00:00",
+  "generated_at": "2026-08-19T11:42:16.503766+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 413
+      "count": 415
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 516
+      "count": 517
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3965",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vikas Jayaram - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Vikas Jayaram",
+      "stage": "triage",
+      "created": "2026-08-19T11:27:58.557Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3965"
+    },
     {
       "id": "ISS-3930",
       "org": "peopleops",
@@ -3890,6 +3902,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-3958",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Vikas Jayaram - Asset Collection",
+      "kind": "asset",
+      "employee": "Vikas Jayaram",
+      "stage": "triage",
+      "created": "2026-08-19T11:27:57.289Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3958"
+    },
+    {
       "id": "ISS-3935",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4968,6 +4992,18 @@
       "created": "2026-01-23T02:43:54.526Z",
       "lwd": "2026-01-24T02:43:38.428Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-142"
+    },
+    {
+      "id": "TKT-110285",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Office Management - Bangalore, India - Offsite prep",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-08-19T11:10:16.018Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/devrev/works/TKT-110285"
     },
     {
       "id": "ISS-355485",
