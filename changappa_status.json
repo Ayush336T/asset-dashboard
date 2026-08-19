@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-19T15:15:36.039324+00:00",
+  "generated_at": "2026-08-19T15:50:57.379203+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 415
+      "count": 417
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3975",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Seth McGoff - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Seth McGoff",
+      "stage": "triage",
+      "created": "2026-08-19T15:25:23.938Z",
+      "lwd": "2026-08-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3975"
+    },
     {
       "id": "ISS-3965",
       "org": "peopleops",
@@ -3900,6 +3912,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3986",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Seth McGoff - Asset Collection",
+      "kind": "asset",
+      "employee": "Seth McGoff",
+      "stage": "triage",
+      "created": "2026-08-19T15:25:26.933Z",
+      "lwd": "2026-08-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3986"
     },
     {
       "id": "ISS-3958",
