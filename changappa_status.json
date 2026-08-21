@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-21T11:56:47.397582+00:00",
+  "generated_at": "2026-08-21T13:00:58.519321+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 420
+      "count": 423
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-4042",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Yashaswi Sunkara - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Yashaswi Sunkara",
+      "stage": "triage",
+      "created": "2026-08-21T12:57:06.616Z",
+      "lwd": "2026-08-29T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4042"
+    },
+    {
+      "id": "ISS-4038",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Yashaswi Sunkara - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Yashaswi Sunkara",
+      "stage": "triage",
+      "created": "2026-08-21T12:57:04.572Z",
+      "lwd": "2026-08-29T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4038"
+    },
+    {
+      "id": "ISS-4036",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Yashaswi Sunkara - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Yashaswi Sunkara",
+      "stage": "triage",
+      "created": "2026-08-21T12:57:03.703Z",
+      "lwd": "2026-08-28T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4036"
+    },
     {
       "id": "ISS-4018",
       "org": "peopleops",
@@ -3938,6 +3974,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-4049",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Yashaswi Sunkara - Asset Collection",
+      "kind": "asset",
+      "employee": "Yashaswi Sunkara",
+      "stage": "triage",
+      "created": "2026-08-21T12:57:08.756Z",
+      "lwd": "2026-08-28T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4049"
+    },
+    {
       "id": "ISS-4014",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -5040,18 +5088,6 @@
       "created": "2026-01-27T08:58:46.484Z",
       "lwd": "2026-01-30T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-184"
-    },
-    {
-      "id": "ISS-169",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Franco Virzi - Asset Collection",
-      "kind": "asset",
-      "employee": "Franco Virzi",
-      "stage": "triage",
-      "created": "2026-01-26T14:19:31.806Z",
-      "lwd": "2026-01-30T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-169"
     },
     {
       "id": "TKT-110285",
