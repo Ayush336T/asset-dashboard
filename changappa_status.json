@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-21T01:35:50.282676+00:00",
+  "generated_at": "2026-08-21T02:49:44.318921+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 417
+      "count": 419
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-3997",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Zach Shamieh - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Zach Shamieh",
+      "stage": "triage",
+      "created": "2026-08-21T02:22:29.845Z",
+      "lwd": "2026-09-12T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3997"
+    },
     {
       "id": "ISS-3975",
       "org": "peopleops",
@@ -3912,6 +3924,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-3998",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Zach Shamieh - Asset Collection",
+      "kind": "asset",
+      "employee": "Zach Shamieh",
+      "stage": "triage",
+      "created": "2026-08-21T02:22:32.751Z",
+      "lwd": "2026-09-11T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-3998"
     },
     {
       "id": "ISS-3986",
