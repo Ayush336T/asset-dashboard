@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-21T16:05:21.261416+00:00",
+  "generated_at": "2026-08-21T16:52:40.470209+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 423
+      "count": 422
     },
     {
       "slug": "devrev",
@@ -3986,25 +3986,13 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-4049"
     },
     {
-      "id": "ISS-4014",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Luc Roi - Asset Collection",
-      "kind": "asset",
-      "employee": "Luc Roi",
-      "stage": "triage",
-      "created": "2026-08-21T07:20:21.494Z",
-      "lwd": "2026-08-22T07:20:07.117Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-4014"
-    },
-    {
       "id": "ISS-3998",
       "org": "peopleops",
       "org_label": "People Ops",
       "title": "Employee Name: Zach Shamieh - Asset Collection",
       "kind": "asset",
       "employee": "Zach Shamieh",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-08-21T02:22:32.751Z",
       "lwd": "2026-09-11T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3998"
