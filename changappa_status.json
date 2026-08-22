@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T09:05:02.757971+00:00",
+  "generated_at": "2026-08-22T09:44:00.157688+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -9,7 +9,7 @@
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 517
+      "count": 518
     }
   ],
   "tickets": [
@@ -5076,6 +5076,18 @@
       "created": "2026-01-27T08:58:46.484Z",
       "lwd": "2026-01-30T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-184"
+    },
+    {
+      "id": "ISS-364619",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Admin Checklist: Office Setup for New Hire (Needhi Ranjana)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-08-22T09:39:44.148Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/devrev/works/ISS-364619"
     },
     {
       "id": "TKT-110285",
