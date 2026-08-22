@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T23:40:56.547977+00:00",
+  "generated_at": "2026-08-22T00:01:29.024323+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -5132,7 +5132,7 @@
       "title": "Admin Checklist: Office Setup for New Hire (Tarun Kumar Rajput)",
       "kind": "other",
       "employee": "",
-      "stage": "Incomplete",
+      "stage": "Overdue",
       "created": "2026-07-29T00:00:07.538Z",
       "lwd": "2026-08-22T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-351498"
