@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-26T08:10:09.033588+00:00",
+  "generated_at": "2026-08-26T09:04:00.199374+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 428
+      "count": 430
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-4097",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Tadej Skrbinek - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Tadej Skrbinek",
+      "stage": "triage",
+      "created": "2026-08-26T08:32:16.732Z",
+      "lwd": "2026-09-01T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4097"
+    },
     {
       "id": "ISS-4081",
       "org": "peopleops",
@@ -4032,6 +4044,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-4109",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Tadej Skrbinek - Asset Collection",
+      "kind": "asset",
+      "employee": "Tadej Skrbinek",
+      "stage": "triage",
+      "created": "2026-08-26T08:32:22.462Z",
+      "lwd": "2026-08-31T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4109"
     },
     {
       "id": "ISS-4093",
