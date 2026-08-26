@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-26T07:26:44.724702+00:00",
+  "generated_at": "2026-08-26T08:10:09.033588+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 426
+      "count": 428
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-4081",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Ur\u0161a Ke\u0161e - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Ur\u0161a Ke\u0161e",
+      "stage": "triage",
+      "created": "2026-08-26T07:56:50.985Z",
+      "lwd": "2026-08-29T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4081"
+    },
     {
       "id": "ISS-4068",
       "org": "peopleops",
@@ -4020,6 +4032,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-4093",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Ur\u0161a Ke\u0161e - Asset Collection",
+      "kind": "asset",
+      "employee": "Ur\u0161a Ke\u0161e",
+      "stage": "triage",
+      "created": "2026-08-26T07:56:56.118Z",
+      "lwd": "2026-08-28T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4093"
     },
     {
       "id": "ISS-4076",
