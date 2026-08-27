@@ -1,18 +1,66 @@
 {
-  "generated_at": "2026-08-27T03:20:52.419009+00:00",
+  "generated_at": "2026-08-27T14:30:30.456452+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 430
+      "count": 435
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 520
+      "count": 519
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4721",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Visa Letter for Divyateja",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-08-27T11:33:32.191Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4721"
+    },
+    {
+      "id": "ISS-4126",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shreya D Talekar - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Shreya D Talekar",
+      "stage": "triage",
+      "created": "2026-08-27T06:45:54.429Z",
+      "lwd": "2026-09-19T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4126"
+    },
+    {
+      "id": "ISS-4116",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shreya D Talekar - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Shreya D Talekar",
+      "stage": "triage",
+      "created": "2026-08-27T06:45:51.014Z",
+      "lwd": "2026-09-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4116"
+    },
+    {
+      "id": "ISS-4114",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shreya D Talekar - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Shreya D Talekar",
+      "stage": "triage",
+      "created": "2026-08-27T06:45:48.639Z",
+      "lwd": "2026-09-19T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4114"
+    },
     {
       "id": "ISS-4097",
       "org": "peopleops",
@@ -4046,6 +4094,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-4124",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Shreya D Talekar - Asset Collection",
+      "kind": "asset",
+      "employee": "Shreya D Talekar",
+      "stage": "triage",
+      "created": "2026-08-27T06:45:54.003Z",
+      "lwd": "2026-09-18T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4124"
+    },
+    {
       "id": "ISS-4109",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -5172,18 +5232,6 @@
       "created": "2026-02-07T01:24:14.271Z",
       "lwd": "2026-02-13T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-289"
-    },
-    {
-      "id": "TKT-111148",
-      "org": "devrev",
-      "org_label": "DevRev",
-      "title": "Update salary credit bank account",
-      "kind": "other",
-      "employee": "",
-      "stage": "queued",
-      "created": "2026-08-27T03:05:33.101Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/devrev/works/TKT-111148"
     },
     {
       "id": "TKT-110741",
