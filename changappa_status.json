@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-27T23:56:29.657048+00:00",
+  "generated_at": "2026-08-28T10:52:47.697959+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 435
+      "count": 434
     },
     {
       "slug": "devrev",
@@ -13,18 +13,6 @@
     }
   ],
   "tickets": [
-    {
-      "id": "TKT-4721",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Visa Letter for Divyateja",
-      "kind": "other",
-      "employee": "",
-      "stage": "queued",
-      "created": "2026-08-27T11:33:32.191Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/peopleops/works/TKT-4721"
-    },
     {
       "id": "ISS-4126",
       "org": "peopleops",
