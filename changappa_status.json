@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-30T07:29:48.456505+00:00",
+  "generated_at": "2026-08-30T13:14:25.052948+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 434
+      "count": 438
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-4146",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Himalaya Jhala - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Himalaya Jhala",
+      "stage": "triage",
+      "created": "2026-08-30T12:41:44.859Z",
+      "lwd": "2026-09-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4146"
+    },
+    {
+      "id": "ISS-4145",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Himalaya Jhala - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Himalaya Jhala",
+      "stage": "triage",
+      "created": "2026-08-30T12:41:44.687Z",
+      "lwd": "2026-09-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4145"
+    },
+    {
+      "id": "ISS-4138",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Himalaya Jhala - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Himalaya Jhala",
+      "stage": "triage",
+      "created": "2026-08-30T12:41:40.822Z",
+      "lwd": "2026-09-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4138"
+    },
     {
       "id": "ISS-4126",
       "org": "peopleops",
@@ -4080,6 +4116,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-4148",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Himalaya Jhala - Asset Collection",
+      "kind": "asset",
+      "employee": "Himalaya Jhala",
+      "stage": "triage",
+      "created": "2026-08-30T12:41:45.804Z",
+      "lwd": "2026-09-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4148"
     },
     {
       "id": "ISS-4124",
