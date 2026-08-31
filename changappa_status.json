@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-31T07:04:23.050527+00:00",
+  "generated_at": "2026-08-31T15:07:40.056223+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 438
+      "count": 433
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4729",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "for the US (B1 B2)",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-08-31T09:53:55.638Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4729"
+    },
     {
       "id": "ISS-4146",
       "org": "peopleops",
@@ -4166,30 +4178,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-4093"
     },
     {
-      "id": "ISS-4076",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Ajay Gitala - Asset Collection",
-      "kind": "asset",
-      "employee": "Ajay Gitala",
-      "stage": "triage",
-      "created": "2026-08-25T09:10:46.983Z",
-      "lwd": "2026-08-26T09:10:30.763Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-4076"
-    },
-    {
-      "id": "ISS-4049",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Yashaswi Sunkara - Asset Collection",
-      "kind": "asset",
-      "employee": "Yashaswi Sunkara",
-      "stage": "triage",
-      "created": "2026-08-21T12:57:08.756Z",
-      "lwd": "2026-08-28T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-4049"
-    },
-    {
       "id": "ISS-3998",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4248,18 +4236,6 @@
       "created": "2026-08-18T09:58:56.897Z",
       "lwd": "2026-08-28T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3923"
-    },
-    {
-      "id": "ISS-3909",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Gokul Krishna J D - Asset Collection",
-      "kind": "asset",
-      "employee": "Gokul Krishna J D",
-      "stage": "triage",
-      "created": "2026-08-18T09:47:09.901Z",
-      "lwd": "2026-08-19T09:46:54.239Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3909"
     },
     {
       "id": "ISS-3890",
@@ -4370,18 +4346,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-3736"
     },
     {
-      "id": "ISS-3718",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Saem Habeeb - Asset Collection",
-      "kind": "asset",
-      "employee": "Saem Habeeb",
-      "stage": "triage",
-      "created": "2026-08-13T04:49:56.051Z",
-      "lwd": "2026-08-15T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3718"
-    },
-    {
       "id": "ISS-3700",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4490,18 +4454,6 @@
       "url": "https://app.devrev.ai/peopleops/works/ISS-3368"
     },
     {
-      "id": "ISS-3348",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Vishwajith Upadhyaya K - Asset Collection",
-      "kind": "asset",
-      "employee": "Vishwajith Upadhyaya K",
-      "stage": "triage",
-      "created": "2026-07-30T09:08:43.858Z",
-      "lwd": "2026-08-14T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3348"
-    },
-    {
       "id": "ISS-3321",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -4608,18 +4560,6 @@
       "created": "2026-07-16T09:28:12.482Z",
       "lwd": "2026-07-22T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3078"
-    },
-    {
-      "id": "ISS-3058",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Pratham Gupta - Asset Collection",
-      "kind": "asset",
-      "employee": "Pratham Gupta",
-      "stage": "triage",
-      "created": "2026-07-16T05:29:15.823Z",
-      "lwd": "2026-08-03T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3058"
     },
     {
       "id": "ISS-3007",
