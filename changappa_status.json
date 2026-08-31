@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T22:45:53.365839+00:00",
+  "generated_at": "2026-08-31T01:13:31.397782+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -5288,7 +5288,7 @@
       "title": "Admin Checklist: Office Setup for New Hire (Needhi Ranjana)",
       "kind": "other",
       "employee": "",
-      "stage": "Incomplete",
+      "stage": "Overdue",
       "created": "2026-08-22T09:39:44.148Z",
       "lwd": "2026-08-31T00:00:00Z",
       "url": "https://app.devrev.ai/devrev/works/ISS-364619"
