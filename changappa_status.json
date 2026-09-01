@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-01T00:28:11.135397+00:00",
+  "generated_at": "2026-09-01T05:33:36.646901+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 434
+      "count": 433
     },
     {
       "slug": "devrev",
@@ -14,25 +14,13 @@
   ],
   "tickets": [
     {
-      "id": "TKT-4732",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Visa for India (Bangalore) Trip",
-      "kind": "other",
-      "employee": "",
-      "stage": "queued",
-      "created": "2026-08-31T22:48:37.949Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/peopleops/works/TKT-4732"
-    },
-    {
       "id": "TKT-4729",
       "org": "peopleops",
       "org_label": "People Ops",
       "title": "for the US (B1 B2)",
       "kind": "other",
       "employee": "",
-      "stage": "queued",
+      "stage": "work_in_progress",
       "created": "2026-08-31T09:53:55.638Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-4729"
