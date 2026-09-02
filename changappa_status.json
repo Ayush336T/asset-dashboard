@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-02T06:16:05.168809+00:00",
+  "generated_at": "2026-09-02T11:36:43.722946+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 437
+      "count": 439
     },
     {
       "slug": "devrev",
@@ -13,6 +13,30 @@
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4744",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Newzealand Visa",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-09-02T11:17:40.21Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4744"
+    },
+    {
+      "id": "ISS-4213",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Korlan Buxton - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Korlan Buxton",
+      "stage": "triage",
+      "created": "2026-09-02T06:15:53.998Z",
+      "lwd": "2026-09-03T06:15:38.03Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4213"
+    },
     {
       "id": "ISS-4193",
       "org": "peopleops",
@@ -4166,6 +4190,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-4217",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Korlan Buxton - Asset Collection",
+      "kind": "asset",
+      "employee": "Korlan Buxton",
+      "stage": "triage",
+      "created": "2026-09-02T06:15:55.615Z",
+      "lwd": "2026-09-03T06:15:39.183Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4217"
+    },
+    {
       "id": "ISS-4186",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -5244,18 +5280,6 @@
       "created": "2026-02-10T17:21:59.076Z",
       "lwd": "2026-02-20T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-382"
-    },
-    {
-      "id": "ISS-318",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: John McGraw - Asset Collection",
-      "kind": "asset",
-      "employee": "John McGraw",
-      "stage": "triage",
-      "created": "2026-02-07T01:53:44.31Z",
-      "lwd": "2026-02-13T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-318"
     },
     {
       "id": "TKT-110741",
