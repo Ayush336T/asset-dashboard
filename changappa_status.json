@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-02T11:36:43.722946+00:00",
+  "generated_at": "2026-09-02T15:18:55.466104+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 439
+      "count": 440
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4748",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "US visa",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-09-02T12:32:10.14Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4748"
+    },
     {
       "id": "TKT-4744",
       "org": "peopleops",
@@ -4208,7 +4220,7 @@
       "title": "Employee Name: Michael Fazio - Asset Collection",
       "kind": "asset",
       "employee": "Michael Fazio",
-      "stage": "triage",
+      "stage": "In Progress",
       "created": "2026-09-01T20:46:23.504Z",
       "lwd": "2026-09-02T20:46:09.157Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-4186"
