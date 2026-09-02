@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-02T15:18:55.466104+00:00",
+  "generated_at": "2026-09-02T18:52:44.319945+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 440
+      "count": 444
     },
     {
       "slug": "devrev",
@@ -13,6 +13,42 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-4248",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Shenoy - ID Card/Biometric Access",
+      "kind": "id_card",
+      "employee": "Anirudh Shenoy",
+      "stage": "triage",
+      "created": "2026-09-02T15:23:27.89Z",
+      "lwd": "2026-09-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4248"
+    },
+    {
+      "id": "ISS-4247",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Shenoy - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Anirudh Shenoy",
+      "stage": "triage",
+      "created": "2026-09-02T15:23:27.777Z",
+      "lwd": "2026-09-22T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4247"
+    },
+    {
+      "id": "ISS-4239",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Shenoy - Cab Deactivation",
+      "kind": "cab",
+      "employee": "Anirudh Shenoy",
+      "stage": "triage",
+      "created": "2026-09-02T15:23:25.584Z",
+      "lwd": "2026-09-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4239"
+    },
     {
       "id": "TKT-4748",
       "org": "peopleops",
@@ -4200,6 +4236,18 @@
       "created": "2024-06-03T15:02:12.952Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
+    },
+    {
+      "id": "ISS-4250",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Anirudh Shenoy - Asset Collection",
+      "kind": "asset",
+      "employee": "Anirudh Shenoy",
+      "stage": "triage",
+      "created": "2026-09-02T15:23:28.093Z",
+      "lwd": "2026-09-21T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4250"
     },
     {
       "id": "ISS-4217",
