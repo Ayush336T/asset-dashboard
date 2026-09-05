@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-05T12:47:39.338369+00:00",
+  "generated_at": "2026-09-05T15:51:56.550129+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 447
+      "count": 446
     },
     {
       "slug": "devrev",
@@ -4428,18 +4428,6 @@
       "created": "2026-08-18T09:58:56.897Z",
       "lwd": "2026-08-28T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-3923"
-    },
-    {
-      "id": "ISS-3890",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Jency Sequeira - Asset Collection",
-      "kind": "asset",
-      "employee": "Jency Sequeira",
-      "stage": "triage",
-      "created": "2026-08-17T11:19:18.194Z",
-      "lwd": "2026-08-24T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-3890"
     },
     {
       "id": "ISS-3861",
