@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07T06:10:38.355748+00:00",
+  "generated_at": "2026-09-07T12:36:54.981935+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 446
+      "count": 447
     },
     {
       "slug": "devrev",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-4288",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Martin Staric - Deactivating Uber Account",
+      "kind": "uber",
+      "employee": "Martin Staric",
+      "stage": "triage",
+      "created": "2026-09-07T08:58:55.909Z",
+      "lwd": "2026-09-12T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4288"
+    },
     {
       "id": "ISS-4278",
       "org": "peopleops",
@@ -4262,6 +4274,18 @@
       "url": "https://app.devrev.ai/peopleops/works/TKT-255"
     },
     {
+      "id": "ISS-4301",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Employee Name: Martin Staric - Asset Collection",
+      "kind": "asset",
+      "employee": "Martin Staric",
+      "stage": "triage",
+      "created": "2026-09-07T08:59:01Z",
+      "lwd": "2026-09-11T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-4301"
+    },
+    {
       "id": "ISS-4282",
       "org": "peopleops",
       "org_label": "People Ops",
@@ -5352,18 +5376,6 @@
       "created": "2026-02-19T20:56:58.872Z",
       "lwd": "2026-02-20T20:56:40.534Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-453"
-    },
-    {
-      "id": "ISS-382",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Employee Name: Maria Laura Bratt Brizuela - Asset Collection",
-      "kind": "asset",
-      "employee": "Maria Laura Bratt Brizuela",
-      "stage": "triage",
-      "created": "2026-02-10T17:21:59.076Z",
-      "lwd": "2026-02-20T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-382"
     },
     {
       "id": "TKT-110741",
