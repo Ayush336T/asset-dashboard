@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-09-08T06:26:25.118309+00:00",
+  "generated_at": "2026-09-08T11:39:19.656837+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 447
+      "count": 448
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 518
+      "count": 519
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-4780",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "US Visa Approval \u2013 Business Travel",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-09-08T06:57:39.085Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-4780"
+    },
     {
       "id": "ISS-4288",
       "org": "peopleops",
@@ -5376,6 +5388,18 @@
       "created": "2026-02-19T20:56:58.872Z",
       "lwd": "2026-02-20T20:56:40.534Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-453"
+    },
+    {
+      "id": "TKT-112586",
+      "org": "devrev",
+      "org_label": "DevRev",
+      "title": "Office Management - Bangalore, India - Keyboard and mouse request",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-09-08T06:58:07.614Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/devrev/works/TKT-112586"
     },
     {
       "id": "TKT-110741",
