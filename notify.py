@@ -1,5 +1,7 @@
 import json
 import os
+import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -8,14 +10,23 @@ DEVREV_TOKEN = os.environ.get("DEVREV_PAT", "")
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL", "")
 
 
+class DevRevAuthError(Exception):
+    """Raised when DevRev rejects the PAT (401), typically expired or revoked."""
+
+
 def devrev_request(path, body=None, method="POST"):
     url = f"https://api.devrev.ai/{path}"
     data = json.dumps(body).encode() if body is not None else None
     req = urllib.request.Request(url, data=data, method=method)
     req.add_header("Authorization", DEVREV_TOKEN)
     req.add_header("Content-Type", "application/json")
-    with urllib.request.urlopen(req) as resp:
-        return json.loads(resp.read())
+    try:
+        with urllib.request.urlopen(req) as resp:
+            return json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        if e.code == 401:
+            raise DevRevAuthError(path) from e
+        raise
 
 
 def find_self_id():
@@ -144,4 +155,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except DevRevAuthError as e:
+        print(f"DevRev auth failed (401) on '{e}'. PAT is likely expired or revoked.")
+        send_slack(
+            ":lock: *Asset Collection Reminders — DevRev token expired*\n"
+            "The `DEVREV_PAT` was rejected with a 401, so no LWD reminders could be sent today.\n"
+            "→ Mint a new DevRev PAT and update the `DEVREV_PAT` repo secret."
+        )
+        sys.exit(1)
