@@ -1,18 +1,54 @@
 {
-  "generated_at": "2026-10-10T22:51:22.499170+00:00",
+  "generated_at": "2026-10-11T01:41:28.633982+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 518
+      "count": 521
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 518
+      "count": 521
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-383513",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "New Hire Laptop: Prep and Handover (Indranil Tarafdar)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-10-11T00:00:19.086Z",
+      "lwd": "2026-10-26T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-383513"
+    },
+    {
+      "id": "ISS-383512",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "New Hire Laptop: Prep and Handover (Adit Agrawal)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-10-11T00:00:18.011Z",
+      "lwd": "2026-10-26T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-383512"
+    },
+    {
+      "id": "ISS-383510",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "New Hire Laptop: Prep and Handover (Abhishek Lodhi)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-10-11T00:00:15.311Z",
+      "lwd": "2026-10-26T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-383510"
+    },
     {
       "id": "TKT-116330",
       "org": "peopleops",
