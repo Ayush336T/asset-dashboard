@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-10-12T02:26:25.424078+00:00",
+  "generated_at": "2026-10-12T09:38:30.364216+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 521
+      "count": 522
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 521
+      "count": 522
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-116720",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Display replacement needed \u2013 Pixel 9 mobile testing device \u2013 Mumbai",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-10-12T08:01:51.359Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-116720"
+    },
     {
       "id": "ISS-383513",
       "org": "peopleops",
@@ -34,7 +46,7 @@
       "employee": "",
       "stage": "Incomplete",
       "created": "2026-10-11T00:00:18.011Z",
-      "lwd": "2026-10-26T00:00:00Z",
+      "lwd": "2026-11-16T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-383512"
     },
     {
