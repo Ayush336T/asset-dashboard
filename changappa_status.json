@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-10-12T19:21:44.082433+00:00",
+  "generated_at": "2026-10-13T01:34:11.209877+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 522
+      "count": 523
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 522
+      "count": 523
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-384063",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "New Hire Laptop: Prep and Handover (Chandni Karelia)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-10-13T00:00:13.247Z",
+      "lwd": "2026-10-28T00:00:00Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-384063"
+    },
     {
       "id": "TKT-116720",
       "org": "peopleops",
