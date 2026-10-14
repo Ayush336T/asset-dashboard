@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-14T05:27:07.446073+00:00",
+  "generated_at": "2026-10-14T10:31:06.445617+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 523
+      "count": 522
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 523
+      "count": 522
     }
   ],
   "tickets": [
@@ -5556,18 +5556,6 @@
       "created": "2025-04-21T15:34:53.528Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-20843"
-    },
-    {
-      "id": "TKT-20470",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Title: Procurement of IT Accessories",
-      "kind": "other",
-      "employee": "",
-      "stage": "work_in_progress",
-      "created": "2025-04-15T10:32:17.856Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/peopleops/works/TKT-20470"
     },
     {
       "id": "ISS-164402",
