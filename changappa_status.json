@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-18T09:55:07.838176+00:00",
+  "generated_at": "2026-10-18T13:51:03.445803+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 523
+      "count": 522
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 523
+      "count": 522
     }
   ],
   "tickets": [
@@ -48,18 +48,6 @@
       "created": "2026-10-12T08:01:51.359Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-116720"
-    },
-    {
-      "id": "ISS-383513",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "New Hire Laptop: Prep and Handover (Indranil Tarafdar)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2026-10-11T00:00:19.086Z",
-      "lwd": "2026-10-26T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-383513"
     },
     {
       "id": "ISS-383512",
