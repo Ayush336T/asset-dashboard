@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T07:30:32.446549+00:00",
+  "generated_at": "2026-10-19T14:57:06.734734+00:00",
   "orgs": [
     {
       "slug": "peopleops",
@@ -13,6 +13,18 @@
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-386943",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "New Hire Laptop: Prep and Handover (Prafull Jain)",
+      "kind": "other",
+      "employee": "",
+      "stage": "Incomplete",
+      "created": "2026-10-19T11:29:39.199Z",
+      "lwd": "2026-10-20T11:29:24.086Z",
+      "url": "https://app.devrev.ai/peopleops/works/ISS-386943"
+    },
     {
       "id": "ISS-386424",
       "org": "peopleops",
@@ -612,18 +624,6 @@
       "created": "2026-05-12T11:04:48.421Z",
       "lwd": "2026-05-13T11:04:37.208Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-301295"
-    },
-    {
-      "id": "ISS-299032",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Entra  (Azure)",
-      "kind": "other",
-      "employee": "",
-      "stage": "prioritized",
-      "created": "2026-05-06T11:59:58.368Z",
-      "lwd": "2026-05-11T00:00:03.01Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-299032"
     },
     {
       "id": "ISS-298092",
