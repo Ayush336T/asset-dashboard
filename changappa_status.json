@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-26T04:50:46.533997+00:00",
+  "generated_at": "2026-10-26T10:51:04.511073+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 522
+      "count": 521
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 522
+      "count": 521
     }
   ],
   "tickets": [
@@ -72,18 +72,6 @@
       "created": "2026-10-11T00:00:18.011Z",
       "lwd": "2026-11-16T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-383512"
-    },
-    {
-      "id": "ISS-383510",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "New Hire Laptop: Prep and Handover (Abhishek Lodhi)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Overdue",
-      "created": "2026-10-11T00:00:15.311Z",
-      "lwd": "2026-10-26T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-383510"
     },
     {
       "id": "TKT-116330",
