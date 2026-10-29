@@ -1,30 +1,18 @@
 {
-  "generated_at": "2026-10-29T05:18:22.148093+00:00",
+  "generated_at": "2026-10-29T11:41:21.022944+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 522
+      "count": 521
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 522
+      "count": 521
     }
   ],
   "tickets": [
-    {
-      "id": "TKT-118305",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Configure Okta Request Access flow for tailscale-users group with approver rules",
-      "kind": "other",
-      "employee": "",
-      "stage": "queued",
-      "created": "2026-10-27T05:10:54.884Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/peopleops/works/TKT-118305"
-    },
     {
       "id": "ISS-386943",
       "org": "peopleops",
