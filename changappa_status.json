@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-30T08:30:10.846207+00:00",
+  "generated_at": "2026-10-30T15:17:03.550375+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 521
+      "count": 520
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 521
+      "count": 520
     }
   ],
   "tickets": [
@@ -96,18 +96,6 @@
       "created": "2026-10-05T17:12:16.281Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/ISS-381270"
-    },
-    {
-      "id": "ISS-380785",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "New Hire Laptop: Prep and Handover (Nirmal Thomas)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2026-10-04T00:00:42.301Z",
-      "lwd": "2026-11-02T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-380785"
     },
     {
       "id": "ISS-379987",
