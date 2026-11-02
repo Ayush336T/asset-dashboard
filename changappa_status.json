@@ -1,18 +1,42 @@
 {
-  "generated_at": "2026-11-01T23:56:39.152591+00:00",
+  "generated_at": "2026-11-02T05:28:41.469140+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 520
+      "count": 522
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 520
+      "count": 522
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-118830",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Offboarding: Ramya Devi mailbox read-only access and mail forwarding to Murali",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-11-02T05:25:11.235Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-118830"
+    },
+    {
+      "id": "TKT-118829",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Offboarding: Deepak Nair mailbox read-only access and mail forwarding to Mohit Patle",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-11-02T05:25:05.261Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-118829"
+    },
     {
       "id": "ISS-386943",
       "org": "peopleops",
