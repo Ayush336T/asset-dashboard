@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-04T18:47:10.399092+00:00",
+  "generated_at": "2026-11-05T00:13:52.121900+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 525
+      "count": 524
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 525
+      "count": 524
     }
   ],
   "tickets": [
@@ -36,18 +36,6 @@
       "created": "2026-11-03T21:14:12.362Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-119327"
-    },
-    {
-      "id": "TKT-119326",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Asset Request - Laptop - Melissa Hernandez",
-      "kind": "other",
-      "employee": "",
-      "stage": "queued",
-      "created": "2026-11-03T21:11:57.278Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/peopleops/works/TKT-119326"
     },
     {
       "id": "TKT-118830",
