@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-11-06T01:49:38.979964+00:00",
+  "generated_at": "2026-11-06T09:04:11.871224+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 524
+      "count": 525
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 524
+      "count": 525
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-119693",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Asset Request - Laptop - Arth Gajjar",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-11-06T07:37:59.038Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-119693"
+    },
     {
       "id": "TKT-119381",
       "org": "peopleops",
