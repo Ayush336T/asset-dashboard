@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-11-16T10:59:24.429230+00:00",
+  "generated_at": "2026-11-16T20:56:20.167688+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 527
+      "count": 528
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 527
+      "count": 528
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-120484",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Provide Grafana access to product team and CSMs for product analytics",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-11-16T11:33:52.696Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-120484"
+    },
     {
       "id": "ISS-397626",
       "org": "peopleops",
