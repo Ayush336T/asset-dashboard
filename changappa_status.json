@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-11-16T03:01:02.228301+00:00",
+  "generated_at": "2026-11-16T10:59:24.429230+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 526
+      "count": 527
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 526
+      "count": 527
     }
   ],
   "tickets": [
+    {
+      "id": "ISS-397626",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "RIF access and asset audit \u2013 India",
+      "kind": "other",
+      "employee": "",
+      "stage": "triage",
+      "created": "2026-11-16T09:58:29.477Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/ISS-397626"
+    },
     {
       "id": "TKT-120408",
       "org": "peopleops",
@@ -190,7 +202,7 @@
       "employee": "",
       "stage": "Incomplete",
       "created": "2026-09-29T00:00:16.86Z",
-      "lwd": "2026-11-23T00:00:00Z",
+      "lwd": "2026-11-26T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-378903"
     },
     {
