@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-18T03:04:40.827464+00:00",
+  "generated_at": "2026-11-18T11:46:09.152726+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 529
+      "count": 528
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 529
+      "count": 528
     }
   ],
   "tickets": [
@@ -48,18 +48,6 @@
       "created": "2026-11-16T09:58:29.477Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/ISS-397626"
-    },
-    {
-      "id": "TKT-120408",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "Slack #general channel cleanup",
-      "kind": "other",
-      "employee": "",
-      "stage": "queued",
-      "created": "2026-11-15T02:48:50.337Z",
-      "lwd": null,
-      "url": "https://app.devrev.ai/peopleops/works/TKT-120408"
     },
     {
       "id": "TKT-119693",
