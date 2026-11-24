@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-11-23T22:12:19.578572+00:00",
+  "generated_at": "2026-11-24T06:06:23.657321+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 528
+      "count": 529
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 528
+      "count": 529
     }
   ],
   "tickets": [
+    {
+      "id": "TKT-121224",
+      "org": "peopleops",
+      "org_label": "People Ops",
+      "title": "Enable DevRev SSO Access to Greenhouse for Leapinc Recruiters",
+      "kind": "other",
+      "employee": "",
+      "stage": "queued",
+      "created": "2026-11-24T05:51:07.216Z",
+      "lwd": null,
+      "url": "https://app.devrev.ai/peopleops/works/TKT-121224"
+    },
     {
       "id": "ISS-397757",
       "org": "peopleops",
