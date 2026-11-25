@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-25T02:02:30.348036+00:00",
+  "generated_at": "2026-11-25T11:20:05.048822+00:00",
   "orgs": [
     {
       "slug": "peopleops",
       "label": "People Ops",
-      "count": 529
+      "count": 528
     },
     {
       "slug": "devrev",
       "label": "DevRev",
-      "count": 529
+      "count": 528
     }
   ],
   "tickets": [
@@ -24,18 +24,6 @@
       "created": "2026-11-24T05:51:07.216Z",
       "lwd": null,
       "url": "https://app.devrev.ai/peopleops/works/TKT-121224"
-    },
-    {
-      "id": "ISS-397757",
-      "org": "peopleops",
-      "org_label": "People Ops",
-      "title": "New Hire Laptop: Prep and Handover (Ram Pancharia)",
-      "kind": "other",
-      "employee": "",
-      "stage": "Incomplete",
-      "created": "2026-11-17T00:00:14.829Z",
-      "lwd": "2026-12-02T00:00:00Z",
-      "url": "https://app.devrev.ai/peopleops/works/ISS-397757"
     },
     {
       "id": "TKT-120484",
@@ -178,7 +166,7 @@
       "employee": "",
       "stage": "Incomplete",
       "created": "2026-10-11T00:00:18.011Z",
-      "lwd": "2026-12-14T00:00:00Z",
+      "lwd": "2026-12-01T00:00:00Z",
       "url": "https://app.devrev.ai/peopleops/works/ISS-383512"
     },
     {
